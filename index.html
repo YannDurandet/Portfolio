@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yann Durandet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="landingPage">
+        <nav>
+            <ul class="navList">
+                <li class="navItemHolder ">
+                    <a href="https://instagram.com/yann.drndt">
+                        <i class="fa-brands fa-instagram socialLink click"></i>
+                    </a>
+                </li>
+                <li class="navItemHolder ">
+                    <a href="https://www.linkedin.com/in/yann-durandet-16472a252/">
+                        <i class="fa-brands fa-linkedin-in socialLink click"></i>
+                    </a>
+                </li>
+                <li class="navItemHolder ">
+                    <a href="https://www.linkedin.com/in/yann-durandet-16472a252/">
+                        <i class="fa-brands fa-github socialLink click"></i>
+                    </a>
+                </li>
+            </ul>
+            <ul class="navList">
+                <li class="navItemHolder" onclick="toggleModal()">
+                    <a href="#" class=" navLink navLinkText linkHoverEffect LHECOLOR">About</a>
+                </li>
+                <li class="navItemHolder">
+                    <a href="mailto:durandet.yann@gmail.com" class=" navLink navLinkButton click">Contact</a>
+                </li>
+                <li class="navItemHolder click">
+                    <a href="#" class="navLink" onclick="toggleContrast()">
+                        <i class="fas fa-adjust click" alt="toggle"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <header>
+            <figure>
+                <img id="personalLogo" src="assets/website-logo/mainLogo.svg" alt="LOGO">
+                <img id="personalLogoDark" src="assets/website-logo/mainLogoDark.svg" alt="LOGO">
+            </figure>
+            <div class="quote">
+                <p class="quoteText">
+                    <em>"Do the Hard Work, Especially when You don't Feel like It."</em> - Hamza Ahmed
+                </p>
+            </div>
+            <div class="menu">
+                <a href="#" class="menuText linkHoverEffect LHECOLOR" onclick="showAll()" id="showAllButton" style="display:none">/ Show all</a>
+                <a href="#workGrid" class="menuText linkHoverEffect LHECOLOR" onclick="toggleLogos()" id="LogoButton">/ Logos</a>
+                <a href="#workGrid" class="menuText linkHoverEffect LHECOLOR" onclick="toggleDesigns()" id="webDesignButton">/ Web Design</a>
+                <a href="#workGrid" class="menuText linkHoverEffect LHECOLOR" onclick="toggleIllustrations()" id="illustrationButton">/ Illustrations</a>
+                <p class="menuText linkHoverEffect LHECOLOR">/ (Coming Soon !)</p>
+            </div>
+        </header>
+    </section>
+    <section id="workGrid">
+        <div class="container">
+            <div class="workItem logoItem">
+                <div class="workImageHolder">
+                    <img src="assets/work-illustrations/GarageMiniature.png" class="workImage" alt="Logo du Garage JDM">
+                </div>
+                <div class="workDescription">
+                    <h4 class="workDescTitle">
+                        Han's Garage
+                    </h4>
+                    <p class="workDescTag">
+                        Logo
+                    </p>
+                    <p class="workDescText">
+                        Conception of a Logo for Han's Garage, a fictionnal garage inspired by F&F : Tokyo Drift which I
+                        made for my midterms.
+                    </p>
+                </div>
+            </div>
+            <div class="workItem webDesignItem">
+                <div class="workImageHolder">
+                    <img src="assets/work-illustrations/Yann-Durandet-quiet-racing-checkout.png" class="workImage"
+                        alt="Page checkout Quiet">
+                </div>
+                <div class="workDescription">
+                    <h4 class="workDescTitle">
+                        Quiet Racing
+                    </h4>
+                    <p class="workDescTag">
+                        Web Design
+                    </p>
+                    <p class="workDescText">
+                        Conceptions of pages for the quiet website with a few references to the best movie franchise of
+                        all time (after Star Wars)
+                    </p>
+                </div>
+            </div>
+            <div class="workItem logoItem">
+                <div class="workImageHolder">
+                    <img src="assets/work-illustrations/Heart Shards.png" class="workImage" alt="4 coeurs colorés">
+                </div>
+                <div class="workDescription">
+                    <h4 class="workDescTitle">
+                        Heart Shards
+                    </h4>
+                    <p class="workDescTag">
+                        Logo
+                    </p>
+                    <p class="workDescText">
+                        Concept of logos for a fictional brand. Might stick one to a shirt, it looks good in my opinion.
+                    </p>
+                </div>
+            </div>
+            <div class="workItem illustrationItem">
+                <div class="workImageHolder">
+                    <img src="assets/work-illustrations/far-west.png" class="workImage" alt="IMAGE TEXT">
+                </div>
+                <div class="workDescription">
+                    <h4 class="workDescTitle">
+                        Far West Landscape
+                    </h4>
+                    <p class="workDescTag">
+                        Illustration
+                    </p>
+                    <p class="workDescText">
+                        This is an illustration I made early when trying to learn Adobe Illustrator
+                    </p>
+                </div>
+            </div>
+            <div class="workItem illustrationItem">
+                <div class="workImageHolder">
+                    <img src="assets/work-illustrations/Solo A Star Wars Story Fan Poster.png" class="workImage"
+                        alt="IMAGE TEXT">
+                </div>
+                <div class="workDescription">
+                    <h4 class="workDescTitle">
+                        Solo Movie Poster
+                    </h4>
+                    <p class="workDescTag">
+                        illustration
+                    </p>
+                    <p class="workDescText">
+                        This poster is the first work I produced with Photoshop & Illustrator. It might not be
+                        excellent, but I am still proud enough of it to share it here.
+                    </p>
+                </div>
+            </div>
+            <div class="workItem logoItem">
+                <div class="workImageHolder">
+                    <img src="assets/work-illustrations/EverEast.png" class="workImage" alt="IMAGE TEXT">
+                </div>
+                <div class="workDescription">
+                    <h4 class="workDescTitle">
+                        EVER EAST
+                    </h4>
+                    <p class="workDescTag">
+                        Logo
+                    </p>
+                    <p class="workDescText">
+                        Concept of logos for a fictional sport brand.
+                    </p>
+                </div>
+            </div>
+            <div class="workItem logoItem">
+                <div class="workImageHolder">
+                    <img src="assets/work-illustrations/logo-yann.png" class="workImage" alt="Mon Logotype">
+                </div>
+                <div class="workDescription">
+                    <h4 class="workDescTitle">
+                        Personnal Logo
+                    </h4>
+                    <p class="workDescTag">
+                        Logo
+                    </p>
+                    <p class="workDescText">
+                        Might change it. Might not.
+                    </p>
+                </div>
+            </div>
+            <div class="workItem illustrationItem">
+                <div class="workImageHolder">
+                    <img src="assets/work-illustrations/mountains-landscape.png" class="workImage" alt="Mountain Landscape">
+                </div>
+                <div class="workDescription">
+                    <h4 class="workDescTitle">
+                        Mountain Landscape
+                    </h4>
+                    <p class="workDescTag">
+                        Illustration
+                    </p>
+                    <p class="workDescText">
+                        Just a little something I made while learning Illustrator.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="modal">
+        <div class="modalHalf modalIllustration">
+        </div>
+        <div class="modalHalf modalAbout">
+            <h3 class="modalTitle linkHoverEffect LHEBLACK">Here's a bit about me.</h3>
+            <h4 class="modalSubtitle">Web Designer / Front-end Developer</h4>
+            <p class="modalPara">
+                I'm a 20 year-old French Web Designer / Front-end Developer with experience building websites. I have worked for <a href="https://xqual.com" target="_blank"><b class="green">Xqual</b></a> in September 2022.
+                <br>
+                I currently am learning Web Design, Marketing and Development every day at the <a href="https://normandiewebschool.fr" target="_blank"><b class="green">Normandie Web School</b></a> since October 2022, and am looking for an internship in the region of Rouen
+            </p>
+            <div class="modalLanguages">
+                <figure class="modalLanguage">
+                    <img class="modalLanguageImage"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
+                        alt="">
+                    <span class="languageName">HTML</span>
+                </figure>
+                <figure class="modalLanguage">
+                    <img class="modalLanguageImage" src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png"
+                        alt="">
+                    <span class="languageName">CSS</span>
+                </figure>
+                <figure class="modalLanguage">
+                    <img class="modalLanguageImage"
+                        src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png" alt="">
+                    <span class="languageName">JavaScript</span>
+                </figure>
+                <figure class="modalLanguage">
+                    <img class="modalLanguageImage"
+                        src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg" alt="">
+                    <span class="languageName">Photoshop</span>
+                </figure>
+
+                <figure class="modalLanguage">
+                    <img class="modalLanguageImage"
+                        src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg" alt="">
+                    <span class="languageName">Illustrator</span>
+                </figure>
+                <figure class="modalLanguage">
+                    <img class="modalLanguageImage"
+                        src="https://upload.wikimedia.org/wikipedia/commons/4/40/Adobe_Premiere_Pro_CC_icon.svg" alt="">
+                    <span class="languageName">PremierePro</span>
+                </figure>
+                <figure class="modalLanguage">
+                    <img class="modalLanguageImage" src="assets/modal/Figma.png" alt="">
+                    <span class="languageName">Figma</span>
+                </figure>
+                <figure class="modalLanguage">
+                    <img class="modalLanguageImage"
+                        src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Blender_logo_no_text.svg" alt="">
+                    <span class="languageName">Blender</span>
+                </figure>
+            </div>
+            <a href="mailto:durandet.yann@gmail.com">
+                <button class="formSubmit">
+                    Contact Me
+                </button>
+            </a>
+            <i class="fas fa-times modalExit click" onclick="toggleModal()"></i>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footerRow">
+                <a href="#" class="footerAnchor">
+                    <figure class="footerLogo">
+                        <img src="assets/website-logo/logo-no-text-white.png" class="footerLogoImg"
+                            alt="LOGO Yann Durandet Couleur Dark Slash">
+                    </figure>
+                    <span class="footerLogoPopper">
+                        Top
+                        <i class="fas fa-arrow-up"></i>
+                    </span>
+                </a>
+                <div class="footerSocialList">
+                    <a href="https://instagram.com/yann.drndt" target="_blank"
+                        class=" footerSocialLink linkHoverEffect LHEWHITE">Instagram</a>
+                    <a href="https://github.com/YannDurandet" target="_blank"
+                        class=" footerSocialLink linkHoverEffect LHEWHITE">GitHub</a>
+                    <a href="https://www.linkedin.com/in/yann-durandet-16472a252/" target="_blank"
+                        class="  footerSocialLink linkHoverEffect LHEWHITE">LinkedIn</a>
+                    <a href="assets/CV_DURANDET_Yann.pdf" target="_blank"
+                        class="  footerSocialLink linkHoverEffect LHEWHITE">Resume</a>
+                </div>
+                <div class="footerCopyright">
+                    Copyright &copy; 2023 Yann Durandet</div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="https://kit.fontawesome.com/3c2baa7ea7.js" crossorigin="anonymous"></script>
+<script src="index.js" defer async></script>
+
+</html>
+<!-- Feature to add : Toggle between Grid & Detailled view of work Items through icons placed underneath the main menu of the website.-->
+<!-- Feature to add : Toggle between French & English in the Nav-->
+
+<!-- Feature added : Toggle between each kind of realised work, design, logo, illustration...-->
+<!-- Feature added : Work Grid-->
+<!-- Feature added : Modal about me, picture, CTA for contact-->
+<!-- Feature added : Dark Mode switch button-->

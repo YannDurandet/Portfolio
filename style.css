@@ -1,0 +1,549 @@
+/* === Main === */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;600;700;800&display=swap');
+
+* {
+    margin: 0 0;
+    padding: 0 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    transition: all 300ms ease;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* === Main Classes === */
+
+.click {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.green {
+    color: #09814A;
+}
+
+/* === Nav === */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 220vh;
+    margin: 0 auto;
+    padding: 0 100px;
+    height: 70px;
+    background-color: #ffffff8a;
+    backdrop-filter: blur(8px);
+    position: fixed;
+    z-index: 1;
+}
+
+.navList {
+    display: flex;
+    align-items: baseline;
+}
+
+.navItemHolder {
+    margin: 0 12px;
+}
+
+/* === Social Links === */
+
+.socialLink {
+    background-color: #121619;
+    margin-right: 12px;
+    color: #fff;
+    font-size: 20px;
+    padding: 6px 7px;
+}
+
+.socialLink:hover {
+    background-color: #09814A;
+    color: #E5C687;
+    border-radius: 20px;
+}
+
+#navLogo{
+    height: 60px;
+}
+/* === Nav Links === */
+
+.navLinkButton {
+    text-decoration: none;
+    background-color: #121619;
+    color: #fff;
+    border: none;
+    padding: 8px 18px;
+}
+
+.navLinkButton:hover {
+    background-color: #09814A;
+    color: #E5C687;
+    border-radius: 20px;
+}
+
+.navLink {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.navLinkText {
+    color: #121619;
+}
+
+.navLinkText:hover {
+    color: #E5C687;
+}
+
+.fa-adjust {
+    color: #121619;
+}
+
+.fa-adjust:hover {
+    color: #09814A;
+    background-color: #E5C687;
+    border-radius: 20px;
+}
+
+/* === Landing Page === */
+
+#landingPage {
+    height: 92vh;
+    background-color: #09814b11;
+
+}
+
+#personalLogo {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 360px;
+    height: 360px;
+    padding-top: 80px;
+}
+
+#personalLogoDark{
+    display: none;
+    align-items: center;
+    margin: 0 auto;
+    width: 360px;
+    height: 360px;
+    padding-top: 80px;
+}
+.quote {
+    margin: 60px auto 0 auto;
+    padding: 20px 40px;
+    width: 550px;
+    background-color: #121619;
+    color: #fff;
+}
+
+.quoteText {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+.quote:hover {
+    background-color: #09814A;
+    color: #E5C687;
+}
+
+.menu {
+    width: 550px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 60px auto 0 auto;
+}
+
+.menuText {
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    text-decoration: none;
+}
+
+.menuText:hover {
+    color: #E5C687;
+}
+
+/* === Work Grid === */
+
+#workGrid {
+    background-color: #09814b11;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 40px 0;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.workItem {
+    display: block;
+    position: relative;
+    align-self: auto;
+    max-width: 30%;
+    overflow: hidden;
+    margin: 1%;
+}
+
+.workItem:hover .workDescription {
+    opacity: 1;
+    transform: translateY(10%);
+}
+
+.workItem:hover .workImage {
+    filter: brightness(0.3);
+}
+
+.workImage {
+    width: 100%;
+    height: 100%;
+    position: center;
+}
+
+.workDescription {
+    position: absolute;
+    top: 5%;
+    left: 20px;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: opacity 300ms, transform 450ms ease;
+    color: white;
+    max-width: fit-content;
+}
+
+.workDescTitle {
+    font-size: 40px;
+}
+
+.workDescText {
+    margin-top: 8px;
+    margin-right: 16px;
+}
+
+.workDescTag {
+    background-color: white;
+    color: black;
+    margin-bottom: 8px;
+    font-size: 12px;
+    border-radius: 12px;
+    font-weight: 600;
+    width: fit-content;
+    padding: 2px 8px;
+}
+
+/* === Footer === */
+
+footer {
+    position: relative;
+    background-color: #242424;
+    display: flex;
+    padding: 12px 0;
+}
+
+.footerRow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footerLogoImg {
+    width: 360px;
+    padding: 0;
+}
+
+.footerSocialList {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    justify-content: space-around;
+    margin: 14px 0;
+}
+
+.footerSocialLink,
+.footerCopyright {
+    color: white;
+}
+
+.footerLogoPopper {
+    position: absolute;
+    left: 390px;
+    top: 0;
+    font-weight: 700;
+    opacity: 0;
+    color: white;
+}
+
+.footerAnchor {
+    position: relative;
+    padding: 0 100px;
+}
+
+.footerAnchor:hover .footerLogoPopper {
+    transform: translateY(90px);
+    opacity: 1;
+}
+
+.footerCopyright {
+    padding-bottom: 40px;
+}
+
+/* === Modal === */
+
+.modalOpen nav,
+.modalOpen header {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 400ms;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 1100px;
+    height: 700px;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    visibility: hidden;
+    z-index: -1;
+    transition: visibility 1s, z-index 1s, box-shadow 0.5s ease;
+}
+
+.modalOpen .modal {
+    z-index: 60;
+    box-shadow: 0 20px 80px 0 rgb(0, 0, 0, 0.55);
+    visibility: visible;
+}
+
+.modalHalf {
+    width: 50%;
+    padding: 40px 72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    transition: all 300ms ease-in;
+}
+
+.modalOpen .modalAbout,
+.modalOpen .modalIllustration {
+    transform: translateX(0%);
+}
+
+.modalAbout {
+    background-color: rgb(245, 245, 245);
+    transform: translateX(110%);
+}
+
+.modalLanguages {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.modalLanguage {
+    width: 25%;
+    padding: 16px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 300ms ease;
+}
+
+.modalLanguage:hover .languageName {
+    transform: scale(1);
+}
+
+.modalLanguage:hover {
+    filter: brightness(80%);
+    transform: scale(0.9);
+}
+
+.languageName {
+    position: absolute;
+    bottom: -10px;
+    transform: scale(0);
+    transition: all 300ms ease;
+}
+
+.modalLanguageImage {
+    width: 100%;
+}
+
+.modalIllustration {
+    transform: translateX(-110%);
+    background-image: url(assets/modal/about.jpg);
+    background-repeat: none;
+    background-size: cover;
+    color: white;
+}
+
+.modalTitle {
+    font-size: 26px;
+}
+
+.modalSubtitle {
+    margin: 12px 0 24px 0;
+    font-size: 14px;
+}
+
+.modalPara {
+    margin-bottom: 12px;
+    line-height: 1.75;
+}
+
+.formSubmit {
+    background-color: #121619;
+    border: none;
+    color: white;
+    font-weight: 700;
+    width: 100%;
+    padding: 12px 24px;
+    font-size: 20px;
+    margin: 0 auto;
+    margin-top: 12px;
+    transition: all 300ms ease;
+}
+
+.formSubmit:hover {
+    background-color: #09814A;
+    color: #E5C687;
+    border-radius: 40px;    
+}
+
+.modalExit {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    color: #121619;
+    font-size: 36px;
+    z-index: 100;
+}
+
+/* === Hover Effect === */
+
+.linkHoverEffect {
+    position: relative;
+}
+
+.linkHoverEffect:after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    height: 2.5px;
+    width: 0;
+    right: 0;
+    transition: all 300ms ease;
+}
+
+.LHECOLOR:after {
+    background-color: #09814A;
+}
+
+.LHEBLACK:after {
+    background-color: #000;
+}
+
+.LHEWHITE:after {
+    background-color: white;
+}
+
+.LHEBIGWHITE:after {
+    background-color: #fff;
+    height: 4px;
+}
+
+.linkHoverEffect:hover:after {
+    left: 0;
+    width: 100%;
+}
+
+/* === Dark Theme === */
+
+.darkTheme .fa-adjust {
+    color: #fff;
+    background-color: transparent;
+}
+
+.darkTheme nav{
+    background-color: rgba(255, 255, 255, 0.144);
+}
+.darkTheme #landingPage,
+.darkTheme #workGrid {
+    background-color: #121619;
+}
+
+.darkTheme .navLinkText {
+    color: white;
+}
+
+.darkTheme .quote {
+    background-color: #fff;
+    color: #121619;
+}
+
+.darkTheme  .quote:hover {
+    background-color: #f8e9ca;
+    color: #055c35;
+}
+
+.darkTheme #personalLogo{
+    display: none;
+}
+
+.darkTheme #personalLogoDark{
+    display: flex;
+}
+
+.darkTheme .menuText {
+    color: #fff;
+}
+
+.darkTheme .menuText:hover{
+    color: #f8e9ca;
+}
+
+.darkTheme .LHECOLOR:after{
+    background-color: #055c35;
+}
+/* === Responsive === */
+
+@media (max-width : 768px) {
+    .modal {
+        top: 0;
+        left: 0;
+        transform: none;
+        height: auto;
+        width: 100%;
+        flex-direction: column-reverse;
+        border-radius: 0;
+    }
+}
+
+/* === Logo Toggle === */
+
+#showAllButton {
+    display: none;
+}
