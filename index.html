@@ -11,7 +11,7 @@
 
 <body>
     <section id="landingPage">
-        <nav>
+        <nav class="navigation">
             <ul class="navList">
                 <li class="navItemHolder ">
                     <a href="https://instagram.com/yann.drndt">
@@ -30,15 +30,28 @@
                 </li>
             </ul>
             <ul class="navList">
-                <li class="navItemHolder" onclick="toggleModal()">
-                    <a href="#" class=" navLink navLinkText linkHoverEffect LHECOLOR">A propos</a>
+                <!-- PC links-->
+                <li class="navItemHolder ThanosSnapMobile" onclick="toggleModal()">
+                    <a href="#" class="  navLink navLinkText linkHoverEffect LHECOLOR">A propos</a>
                 </li>
-                <li class="navItemHolder">
+                <li class="navItemHolder ThanosSnapMobile">
                     <a href="mailto:durandet.yann@gmail.com" class=" navLink navLinkButton click">Contact</a>
                 </li>
-                <li class="navItemHolder click">
-                    <a href="#" class="navLink" onclick="toggleContrast()">
-                        <i class="fas fa-adjust click" alt="toggle"></i>
+                <!-- Mobile Links-->
+                <li class="navItemHolder ThanosSnapPC" onclick="toggleModal()">
+                    <a href="#" class=" navLink socialLink click">
+                        <i class="fa-regular fa-address-card"></i>
+                    </a>
+                </li>
+                <li class="navItemHolder ThanosSnapPC">
+                    <a href="mailto:durandet.yann@gmail.com" class=" navLink socialLink click">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </li>
+                <!-- Kill Switch-->
+                <li class=" navItemHolder">
+                    <a href="#" class="navLink socialLink click" onclick="toggleContrast()">
+                        <i class="fas fa-adjust" alt="toggle"></i>
                     </a>
                 </li>
             </ul>
@@ -263,11 +276,10 @@
             <div class="footerRow">
                 <a href="#" class="footerAnchor">
                     <figure class="footerLogo">
-                        <img src="assets/website-logo/logo-no-text-white.png" class="footerLogoImg"
-                            alt="LOGO Yann Durandet Couleur Dark Slash">
+                        <img src="assets/website-logo/logo-no-text-white.png" class="footerLogoImg" alt="LOGO YD">
                     </figure>
                     <span class="footerLogoPopper">
-                        Retour en Haut
+                        Top
                         <i class="fas fa-arrow-up"></i>
                     </span>
                 </a>
@@ -282,7 +294,8 @@
                         class="  footerSocialLink linkHoverEffect LHEWHITE">CV</a>
                 </div>
                 <div class="footerCopyright">
-                    Copyright &copy; 2023 Yann Durandet</div>
+                    Copyright &copy; 2023 Yann Durandet
+                </div>
             </div>
         </div>
     </footer>
