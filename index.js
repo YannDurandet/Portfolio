@@ -1,3 +1,4 @@
+/* === Work Toggle === */
 let logoToggle = false;
 function toggleLogos() {
   logoToggle = !logoToggle;
@@ -83,7 +84,7 @@ function toggleContrast() {
   }
 }
 
-/* Modal */
+/* === Modal === */
 let isModalOpen = false;
 function toggleModal() {
   if (isModalOpen) {

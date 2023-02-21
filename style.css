@@ -507,7 +507,7 @@ footer {
     background-color: #055c35;
 }
 
-.darkTheme .modalAbout{
+.darkTheme .modalAbout {
     background-color: #121619;
 }
 
@@ -518,7 +518,7 @@ footer {
     color: #fff;
 }
 
-.darkTheme .formSubmit{
+.darkTheme .formSubmit {
     background-color: #fff;
     color: #121619;
 }
@@ -532,6 +532,7 @@ footer {
     background-color: #fff;
     color: #121619;
 }
+
 /* === Responsive === */
 
 @media (min-width : 769px) {
