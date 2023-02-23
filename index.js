@@ -84,13 +84,13 @@ function toggleContrast() {
   }
 }
 
-/* === Modal === */
-let isModalOpen = false;
-function toggleModal() {
-  if (isModalOpen) {
-    isModalOpen = false;
-    return document.body.classList.remove("modalOpen");
+/* === About === */
+let isAboutOpen = false;
+function toggleAbout() {
+  if (isAboutOpen) {
+    isAboutOpen = false;
+    return document.body.classList.remove("aboutOpen");
   }
-  isModalOpen = true;
-  document.body.classList += " modalOpen";
+  isAboutOpen = true;
+  document.body.classList += " aboutOpen";
 }

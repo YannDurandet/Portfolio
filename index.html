@@ -11,62 +11,62 @@
 
 <body>
     <section id="landingPage">
-        <nav class="navigation">
+        <nav>
             <ul class="navList">
-                <li class="navItemHolder ">
-                    <a href="https://instagram.com/yann.drndt">
-                        <i class="fa-brands fa-instagram socialLink click"></i>
+                <li class="navItemHolder">
+                    <a href="https://instagram.com/yann.drndt" target="_blank">
+                        <i class="fa-brands fa-instagram squareLink click"></i>
                     </a>
                 </li>
-                <li class="navItemHolder ">
-                    <a href="https://www.linkedin.com/in/yann-durandet-16472a252/">
-                        <i class="fa-brands fa-linkedin-in socialLink click"></i>
+                <li class="navItemHolder">
+                    <a href="https://github.com/YannDurandet" target="_blank">
+                        <i class="fa-brands fa-github squareLink click"></i>
                     </a>
                 </li>
-                <li class="navItemHolder ">
-                    <a href="https://www.linkedin.com/in/yann-durandet-16472a252/">
-                        <i class="fa-brands fa-github socialLink click"></i>
+                <li class="navItemHolder">
+                    <a href="https://www.linkedin.com/in/yann-durandet-16472a252/" target="_blank">
+                        <i class="fa-brands fa-linkedin-in squareLink click"></i>
                     </a>
                 </li>
             </ul>
             <ul class="navList">
-                <li class="navItemHolder ThanosSnapMobile" onclick="toggleModal()">
-                    <a href="#" class="  navLink navLinkText linkHoverEffect LHECOLOR">A propos</a>
+                <li class="navItemHolder ThanosSnapMobile" onclick="toggleAbout()">
+                    <a href="#" class="textLink linkHoverEffect LHECOLOR">A propos</a>
                 </li>
                 <li class="navItemHolder ThanosSnapMobile">
-                    <a href="mailto:durandet.yann@gmail.com" class=" navLink navLinkButton click">Contact</a>
+                    <a href="mailto:durandet.yann@gmail.com" class="buttonLink click">Contact</a>
                 </li>
-                <li class="navItemHolder ThanosSnapPC" onclick="toggleModal()">
-                    <a href="#" class=" navLink socialLink click">
+                <li class="navItemHolder ThanosSnapPC" onclick="toggleAbout()">
+                    <a href="#" class="squareLink click">
                         <i class="fa-regular fa-address-card"></i>
                     </a>
                 </li>
                 <li class="navItemHolder ThanosSnapPC">
-                    <a href="mailto:durandet.yann@gmail.com" class=" navLink socialLink click">
+                    <a href="mailto:durandet.yann@gmail.com" class="squareLink click">
                         <i class="fa-solid fa-envelope"></i>
                     </a>
                 </li>
-                <li class=" navItemHolder">
-                    <a href="#" class="navLink socialLink click" onclick="toggleContrast()">
+                <li class="navItemHolder">
+                    <a href="#" class="click" onclick="toggleContrast()">
                         <i class="fas fa-adjust" alt="toggle"></i>
                     </a>
                 </li>
             </ul>
         </nav>
         <header>
-            <figure>
-                <img id="personalLogo" src="assets/website-logo/mainLogo.svg" alt="LOGO">
-                <img id="personalLogoDark" src="assets/website-logo/mainLogoDark.svg" alt="LOGO">
-            </figure>
+            <img class="personalLogo" id="logoLight" src="assets/website-logo/mainLogo.svg" alt="LOGO">
+            <img class="personalLogo" id="logoDark" src="assets/website-logo/mainLogoDark.svg" alt="LOGO">
             <div class="menu">
-                <a href="#" class="menuText linkHoverEffect LHECOLOR" onclick="showAll()" id="showAllButton"
-                    style="display:none">/ Tout voir</a>
-                <a href="#workGrid" class="menuText linkHoverEffect LHECOLOR" onclick="toggleLogos()" id="LogoButton">/
-                    Logos</a>
-                <a href="#workGrid" class="menuText linkHoverEffect LHECOLOR" onclick="toggleDesigns()"
-                    id="webDesignButton">/ Web Design</a>
-                <a href="#workGrid" class="menuText linkHoverEffect LHECOLOR" onclick="toggleIllustrations()"
-                    id="illustrationButton">/ Illustrations</a>
+                <a href="#landingPage" class="menuText linkHoverEffect LHECOLOR" onclick="showAll()"
+                    id="showAllButton"><i class="fa-solid fa-angles-left"></i> Tout voir</a>
+                <a href="#landingPage" class="menuText linkHoverEffect LHECOLOR" onclick="toggleLogos()"
+                    id="LogoButton">-
+                    Logos -
+                </a>
+                <a href="#landingPage" class="menuText linkHoverEffect LHECOLOR" onclick="toggleDesigns()"
+                    id="webDesignButton">- Web Design -</a>
+                <a href="#landingPage" class="menuText linkHoverEffect LHECOLOR" onclick="toggleIllustrations()"
+                    id="illustrationButton">- Illustrations -</a>
             </div>
         </header>
     </section>
@@ -207,75 +207,77 @@
             </div>
         </div>
     </section>
-    <div class="modal">
-        <div class="modalHalf modalIllustration">
+    <div class="about">
+        <div class="aboutHalf aboutIllustration">
         </div>
-        <div class="modalHalf modalAbout">
-            <h3 class="modalTitle linkHoverEffect LHEBLACK">A propos de moi</h3>
-            <h4 class="modalSubtitle">Web Designer / Front-end Developer</h4>
-            <p class="modalPara">
+        <div class="aboutHalf aboutAbout">
+            <h3 class="aboutTitle linkHoverEffect LHEBLACK">A propos de moi</h3>
+            <h4 class="aboutSubtitle">Web Designer / Front-end Developer</h4>
+            <p class="aboutPara">
                 Je m'apelle Yann, j'ai 20ans et un peu d'expérience en conception & réalisation de sites web. J'ai
-                effectué un stage chez <a href="https://xqual.com" target="_blank"><b class="green">Xqual</b></a> en
+                effectué un stage chez <a href="https://xqual.com" target="_blank"><b
+                        class="green linkHoverEffect LHECOLOR">Xqual</b></a> en
                 Septembre 2022.
                 <br>
                 Je suis actuellement entrain d'apprendre le développement & design web, ainsi que le Marketing digital à
-                la <a href="https://normandiewebschool.fr" target="_blank"><b class="green">Normandie Web School</b></a>
+                la <a href="https://normandiewebschool.fr" target="_blank"><b
+                        class="green linkHoverEffect LHECOLOR">Normandie Web School</b></a>
                 depuis Octobre 2022, et suis à la recherche d'un stage ou d'une alternance dans la Métropole Rouennaise.
             </p>
-            <div class="modalLanguages">
-                <figure class="modalLanguage">
-                    <img class="modalLanguageImage"
+            <div class="aboutLanguages">
+                <figure class="aboutLanguage">
+                    <img class="aboutLanguageImage"
                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
                         alt="">
                     <span class="languageName">HTML</span>
                 </figure>
-                <figure class="modalLanguage">
-                    <img class="modalLanguageImage" src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png"
+                <figure class="aboutLanguage">
+                    <img class="aboutLanguageImage" src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png"
                         alt="">
                     <span class="languageName">CSS</span>
                 </figure>
-                <figure class="modalLanguage">
-                    <img class="modalLanguageImage"
+                <figure class="aboutLanguage">
+                    <img class="aboutLanguageImage"
                         src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png" alt="">
                     <span class="languageName">JavaScript</span>
                 </figure>
-                <figure class="modalLanguage">
-                    <img class="modalLanguageImage"
+                <figure class="aboutLanguage">
+                    <img class="aboutLanguageImage"
                         src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg" alt="">
                     <span class="languageName">Photoshop</span>
                 </figure>
 
-                <figure class="modalLanguage">
-                    <img class="modalLanguageImage"
+                <figure class="aboutLanguage">
+                    <img class="aboutLanguageImage"
                         src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg" alt="">
                     <span class="languageName">Illustrator</span>
                 </figure>
-                <figure class="modalLanguage">
-                    <img class="modalLanguageImage"
+                <figure class="aboutLanguage">
+                    <img class="aboutLanguageImage"
                         src="https://upload.wikimedia.org/wikipedia/commons/4/40/Adobe_Premiere_Pro_CC_icon.svg" alt="">
                     <span class="languageName">PremierePro</span>
                 </figure>
-                <figure class="modalLanguage">
-                    <img class="modalLanguageImage" src="assets/modal/Figma.png" alt="">
+                <figure class="aboutLanguage">
+                    <img class="aboutLanguageImage" src="assets/about/Figma.png" alt="">
                     <span class="languageName">Figma</span>
                 </figure>
-                <figure class="modalLanguage">
-                    <img class="modalLanguageImage"
+                <figure class="aboutLanguage">
+                    <img class="aboutLanguageImage"
                         src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Blender_logo_no_text.svg" alt="">
                     <span class="languageName">Blender</span>
                 </figure>
             </div>
             <a href="mailto:durandet.yann@gmail.com">
-                <button class="formSubmit">
+                <button class="aboutContact">
                     Me Contacter
                 </button>
             </a>
             <a href="assets/CV_YANN_DURANDET.pdf" target="_blank">
-                <button class="formSubmit">
+                <button class="aboutContact">
                     Mon CV
                 </button>
             </a>
-            <i class="fas fa-times modalExit click" onclick="toggleModal()"></i>
+            <i class="fas fa-times aboutExit click" onclick="toggleAbout()"></i>
         </div>
     </div>
     <footer>
@@ -311,24 +313,3 @@
 <script src="index.js" defer async></script>
 
 </html>
-
-<!--
-To do : Toggle between Grid & Detailled view of work Items through icons placed underneath the main menu of the website (Only on PC)
-To do : Toggle between French & English in the Nav
-To do : Photography section
-To do : comment the code 
-To do : rename and reorganise certain classes
-To do : clean up and reoganise the css file
-To do : create 2 distinct css files for Dark Mode and Link Hover Effect code
-To do : use an svg file as the footer logo
--->
-
-<!-- 
-Done : Responsive NavBar
-Done : Responsive Landing Page
-Done : Responsive Work Grid
-Done : Responsive Modal About me
-Done : Responsive Footer
-Done : Toggle between each kind of work : design, logo, illustration
-Done : Complete Dark Mode
--->
