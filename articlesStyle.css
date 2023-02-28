@@ -1,20 +1,20 @@
 #articles {
-    height: 69vh;
+    height: fit-content;
     background-color: #09814b11;
-    padding-top: 120px;
+    padding: 10px 0;
 }
 
 .articleHolder{
     max-width: 950px;
     display: flex;
     flex-direction: row;
-    margin: 0 auto;
+    margin: 60px auto;
     background-color: #fff;
     box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.181);
 }
 
 .articleHolder:hover{
-    scale: 1.125;
+    scale: 1.05;
 }
 
 .articleImgHolder{
@@ -22,8 +22,11 @@
 }
 
 .articleImg{
-    width: 100%;
+    
+    width: 400px;
+    height: 220px;
     margin-bottom: -4px;
+    
 }
 
 .column{
@@ -51,8 +54,7 @@
    border: none;
    background-color: #122319;
    margin: 0 auto;
-   justify-self: center;
-   padding: 12px 136px;
+   padding: 12px;
    font-weight: 700;
    font-size: 24px;
    color: white;
@@ -64,19 +66,34 @@
     border-radius: 40px;
 }
 
-.darkTheme #articles{
-    background-color: #122319;
+.darkTheme .articleLink{
+    background-color: #fff;
+    color: #000;
+}
+.darkTheme #articles,
+.darkTheme #article{
+    background-color: #121619;
 }
 
+.darkTheme #firstChild{
+    background-color: #242424;
+}
+
+.darkTheme .articleh1,
+.darkTheme .articleh2,
+.darkTheme .articleIllustrationCredits,
+.darkTheme .articleparagraph {
+    color: #f5f5f5;
+}
 .darkTheme .articleHolder{
-    background-color: #d9d9d9;
+    background-color: #c4c4c4;
 }
 
 /* === Main Article === */
 
 #article{
     margin: 0 auto;
-    padding-top: 120px;
+    padding: 120px 0;
     background-color: #09814b11;
 }
 
@@ -115,4 +132,5 @@
     max-width: 700px;
     margin: 0 auto;
     padding: 1%;
+    padding-bottom: 24px;
 }
