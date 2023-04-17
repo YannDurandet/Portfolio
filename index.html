@@ -6,67 +6,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yann Durandet</title>
+    <link rel="stylesheet" href="navButtons.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <section id="landingPage">
+    <section id="landingPage" class="grayBG">
         <nav>
+            <!--Nav PC-->
             <ul class="navList">
                 <li class="navItemHolder">
-                    <a href="https://instagram.com/yann.drndt" target="_blank">
-                        <i class="fa-brands fa-instagram squareLink click"></i>
-                    </a>
+                    <a href="https://instagram.com/yann.drndt" class="button">Instagram</a>
                 </li>
                 <li class="navItemHolder">
-                    <a href="https://github.    com/YannDurandet" target="_blank">
-                        <i class="fa-brands fa-github squareLink click"></i>
-                    </a>
+                    <a href="https://github.com/YannDurandet" class="button">GitHub</a>
                 </li>
                 <li class="navItemHolder">
-                    <a href="https://www.linkedin.com/in/yann-durandet-16472a252/" target="_blank">
-                        <i class="fa-brands fa-linkedin-in squareLink click"></i>
-                    </a>
+                    <a href="https://www.linkedin.com/in/yann-durandet-16472a252/" class="button">LinkedIn</a>
+                </li>
+                <li class="navItemHolder" onclick="toggleAbout()">
+                    <a href="#" class="button white">A&nbsppropos</a>
+                </li>
+                <li class="navItemHolder">
+                    <a href="mailto:durandet.yann@gmail.com" class="button"></i> Contact</a>
                 </li>
             </ul>
+            <!--Nav Mobile-->
             <ul class="navList">
-                <li class="navItemHolder ThanosSnapMobile" onclick="toggleAbout()">
-                    <a href="#" class="textLink linkHoverEffect LHECOLOR">A propos</a>
-                </li>
-                <li class="navItemHolder ThanosSnapMobile">
-                    <a href="mailto:durandet.yann@gmail.com" class="buttonLink click">Contact</a>
-                </li>
-                <li class="navItemHolder ThanosSnapPC" onclick="toggleAbout()">
-                    <a href="#" class="squareLink click">
-                        <i class="fa-regular fa-address-card"></i>
+                <li class="navItemHolder ThanosSnapPC">
+                    <a href="https://instagram.com/yann.drndt" target="_blank">
+                        <i class="fa-brands fa-instagram squareLink click goldColor spruceGreenBG"></i>
                     </a>
                 </li>
                 <li class="navItemHolder ThanosSnapPC">
-                    <a href="mailto:durandet.yann@gmail.com" class="squareLink click">
-                        <i class="fa-solid fa-envelope"></i>
+                    <a href="https://github.com/YannDurandet" target="_blank">
+                        <i class="fa-brands fa-github squareLink click goldColor spruceGreenBG"></i>
                     </a>
                 </li>
-                <li class="navItemHolder">
-                    <a href="#" class="click" onclick="toggleContrast()">
-                        <i class="fas fa-adjust" alt="toggle"></i>
+                <li class="navItemHolder ThanosSnapPC">
+                    <a href="https://www.linkedin.com/in/yann-durandet-16472a252/" target="_blank">
+                        <i class="fa-brands fa-linkedin-in squareLink click goldColor spruceGreenBG"></i>
+                    </a>
+                </li>
+                <li class="navItemHolder ThanosSnapPC" onclick="toggleAbout()">
+                    <a href="#">
+                        <i class="fa-regular fa-address-card squareLink click goldColor spruceGreenBG"></i>
+                    </a>
+                </li>
+                <li class="navItemHolder ThanosSnapPC">
+                    <a href="mailto:durandet.yann@gmail.com">
+                        <i class="fa-solid fa-envelope squareLink click goldColor spruceGreenBG"></i>
                     </a>
                 </li>
             </ul>
+            </ul>
         </nav>
         <header>
-            <img class="personalLogo" id="logoLight" src="assets/website-logo/mainLogo.svg" alt="LOGO">
-            <img class="personalLogo" id="logoDark" src="assets/website-logo/mainLogoDark.svg" alt="LOGO">
+            <img class="personalLogo" src="assets/website-logo/mainLogoDark.svg" alt="LOGO">
             <div class="menu">
-                <a href="#landingPage" class="menuText linkHoverEffect LHECOLOR" onclick="showAll()"
-                    id="showAllButton"><i class="fa-solid fa-angles-left"></i> Tout voir</a>
-                <a href="#landingPage" class="menuText linkHoverEffect LHECOLOR" onclick="toggleLogos()"
-                    id="LogoButton">-
-                    Logos</a>
-                <a href="#landingPage" class="menuText linkHoverEffect LHECOLOR" onclick="toggleDesigns()"
-                    id="webDesignButton">- Web Design</a>
-                <a href="#landingPage" class="menuText linkHoverEffect LHECOLOR" onclick="toggleIllustrations()"
-                    id="illustrationButton">- Illustrations</a>
-                <a href="blog-posts.html" class="menuText linkHoverEffect LHECOLOR">- Rédaction Web</a>
+                <a onclick="showAll()" id="showAllButton" class="button">
+                    Retour
+                </a>
+                <a onclick="toggleLogos()" id="LogoButton" class="button">
+                    Logos
+                </a>
+                <a onclick="toggleDesigns()" id="webDesignButton" class="button">
+                    Web&nbspDesign
+                </a>
+                <a onclick="toggleIllustrations()" id="illustrationButton" class="button">
+                    Illustrations
+                </a>
             </div>
         </header>
     </section>
@@ -76,11 +85,11 @@
                 <div class="workImageHolder">
                     <img src="assets/work-illustrations/logo-han-garage.jpg" class="workImage" alt="Logo du Garage JDM">
                 </div>
-                <div class="workDescription">
+                <div class="workDescription whiteColor">
                     <h4 class="workDescTitle">
                         Han's Garage
                     </h4>
-                    <p class="workDescTag">
+                    <p class="workDescTag variantGreenBG">
                         Logo
                     </p>
                     <p class="workDescText">
@@ -94,11 +103,11 @@
                     <img src="assets/work-illustrations/design-quiet-racing.jpg" class="workImage"
                         alt="Page checkout Quiet">
                 </div>
-                <div class="workDescription">
+                <div class="workDescription whiteColor">
                     <h4 class="workDescTitle">
                         Quiet Racing
                     </h4>
-                    <p class="workDescTag">
+                    <p class="workDescTag variantGreenBG">
                         Web Design
                     </p>
                     <p class="workDescText">
@@ -110,11 +119,11 @@
                 <div class="workImageHolder">
                     <img src="assets/work-illustrations/logo-heart-shards.jpg" class="workImage" alt="4 coeurs colorés">
                 </div>
-                <div class="workDescription">
+                <div class="workDescription whiteColor">
                     <h4 class="workDescTitle">
                         Heart Shards
                     </h4>
-                    <p class="workDescTag">
+                    <p class="workDescTag variantGreenBG">
                         Logo
                     </p>
                     <p class="workDescText">
@@ -126,11 +135,11 @@
                 <div class="workImageHolder">
                     <img src="assets/work-illustrations/illustration-far-west.jpg" class="workImage" alt="IMAGE TEXT">
                 </div>
-                <div class="workDescription">
+                <div class="workDescription whiteColor">
                     <h4 class="workDescTitle">
                         Paysage de Far West
                     </h4>
-                    <p class="workDescTag">
+                    <p class="workDescTag variantGreenBG">
                         Illustration
                     </p>
                     <p class="workDescText">
@@ -142,11 +151,11 @@
                 <div class="workImageHolder">
                     <img src="assets/work-illustrations/illustration-han-solo.jpg" class="workImage" alt="IMAGE TEXT">
                 </div>
-                <div class="workDescription">
+                <div class="workDescription whiteColor">
                     <h4 class="workDescTitle">
                         Solo : A Star Wars Story
                     </h4>
-                    <p class="workDescTag">
+                    <p class="workDescTag variantGreenBG">
                         illustration
                     </p>
                     <p class="workDescText">
@@ -159,11 +168,11 @@
                 <div class="workImageHolder">
                     <img src="assets/work-illustrations/logo-ever-east.jpg" class="workImage" alt="IMAGE TEXT">
                 </div>
-                <div class="workDescription">
+                <div class="workDescription whiteColor">
                     <h4 class="workDescTitle">
                         EVER EAST
                     </h4>
-                    <p class="workDescTag">
+                    <p class="workDescTag variantGreenBG">
                         Logo
                     </p>
                     <p class="workDescText">
@@ -176,11 +185,11 @@
                 <div class="workImageHolder">
                     <img src="assets/work-illustrations/logo-yann-durandet.jpg" class="workImage" alt="Mon Logotype">
                 </div>
-                <div class="workDescription">
+                <div class="workDescription whiteColor">
                     <h4 class="workDescTitle">
                         Logo Personnel
                     </h4>
-                    <p class="workDescTag">
+                    <p class="workDescTag variantGreenBG">
                         Logo
                     </p>
                     <p class="workDescText">
@@ -193,11 +202,11 @@
                     <img src="assets/work-illustrations/illustration-mountains.jpg" class="workImage"
                         alt="Mountain Landscape">
                 </div>
-                <div class="workDescription">
+                <div class="workDescription whiteColor">
                     <h4 class="workDescTitle">
                         Paysage de Montagne
                     </h4>
-                    <p class="workDescTag">
+                    <p class="workDescTag variantGreenBG">
                         Illustration
                     </p>
                     <p class="workDescText">
@@ -210,18 +219,17 @@
     <div class="about">
         <div class="aboutHalf aboutIllustration">
         </div>
-        <div class="aboutHalf aboutAbout">
-            <h3 class="aboutTitle linkHoverEffect LHEBLACK">A propos de moi</h3>
-            <h4 class="aboutSubtitle">Web Designer / Front-end Developer</h4>
+        <div class="aboutHalf aboutAbout spruceGreenBG">
+            <h3 class="aboutTitle whiteColor">A propos de moi</h3>
+            <h4 class="aboutSubtitle whiteColor">Web Designer / Front-end Developer</h4>
             <p class="aboutPara">
-                Je m'apelle Yann, j'ai 20ans et un peu d'expérience en conception & réalisation de sites web. J'ai
-                effectué un stage chez <a href="https://xqual.com" target="_blank"><b
-                        class="green linkHoverEffect LHECOLOR">Xqual</b></a> en
+                Je m'apelle Yann, j'ai 20 ans et un peu d'expérience en conception & réalisation de sites web. J'ai
+                effectué un stage chez <a href="https://xqual.com" target="_blank"><b class="goldColor">Xqual</b></a> en
                 Septembre 2022.
                 <br>
                 J'apprends actuellement le développement & design web, ainsi que le Marketing digital à
-                la <a href="https://normandiewebschool.fr" target="_blank"><b
-                        class="green linkHoverEffect LHECOLOR">Normandie Web School</b></a>
+                la <a href="https://normandiewebschool.fr" target="_blank"><b class="goldColor">Normandie Web
+                        School</b></a>
                 depuis Octobre 2022, et suis à la recherche d'un stage ou d'une alternance dans la Métropole Rouennaise.
             </p>
             <div class="aboutLanguages">
@@ -229,80 +237,75 @@
                     <img class="aboutLanguageImage"
                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
                         alt="">
-                    <span class="languageName">HTML</span>
+                    <span class="languageName whiteColor">HTML</span>
                 </figure>
                 <figure class="aboutLanguage">
                     <img class="aboutLanguageImage" src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png"
                         alt="">
-                    <span class="languageName">CSS</span>
+                    <span class="languageName whiteColor">CSS</span>
                 </figure>
                 <figure class="aboutLanguage">
                     <img class="aboutLanguageImage"
                         src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png" alt="">
-                    <span class="languageName">JavaScript</span>
+                    <span class="languageName whiteColor">JavaScript</span>
                 </figure>
                 <figure class="aboutLanguage">
                     <img class="aboutLanguageImage"
                         src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg" alt="">
-                    <span class="languageName">Photoshop</span>
+                    <span class="languageName whiteColor">Photoshop</span>
                 </figure>
 
                 <figure class="aboutLanguage">
                     <img class="aboutLanguageImage"
                         src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg" alt="">
-                    <span class="languageName">Illustrator</span>
+                    <span class="languageName whiteColor">Illustrator</span>
                 </figure>
                 <figure class="aboutLanguage">
                     <img class="aboutLanguageImage"
                         src="https://upload.wikimedia.org/wikipedia/commons/4/40/Adobe_Premiere_Pro_CC_icon.svg" alt="">
-                    <span class="languageName">PremierePro</span>
+                    <span class="languageName whiteColor">PremierePro</span>
                 </figure>
                 <figure class="aboutLanguage">
                     <img class="aboutLanguageImage" src="assets/about/Figma.png" alt="">
-                    <span class="languageName">Figma</span>
+                    <span class="languageName whiteColor">Figma</span>
                 </figure>
                 <figure class="aboutLanguage">
                     <img class="aboutLanguageImage"
                         src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Blender_logo_no_text.svg" alt="">
-                    <span class="languageName">Blender</span>
+                    <span class="languageName whiteColor">Blender</span>
                 </figure>
             </div>
-            <a href="mailto:durandet.yann@gmail.com">
-                <button class="aboutContact">
-                    Me Contacter
-                </button>
+            <a href="mailto:durandet.yann@gmail.com" class="button dark aboutBouton">
+                Me Contacter
             </a>
-            <a href="assets/CV_YANN_DURANDET.pdf" target="_blank">
-                <button class="aboutContact">
-                    Mon CV
-                </button>
+            <a href="assets/CV_YANN_DURANDET.pdf" target="_blank" class="button dark aboutBouton">
+                Mon CV
             </a>
-            <i class="fas fa-times aboutExit click" onclick="toggleAbout()"></i>
+            <i class="fas fa-times aboutExit click goldColor" onclick="toggleAbout()"></i>
         </div>
     </div>
-    <footer>
+    <footer class="spruceGreenBG">
         <div class="container">
             <div class="footerRow">
                 <a href="#" class="footerAnchor">
                     <figure class="footerLogo">
-                        <img src="assets/website-logo/logo-no-text-white.png" class="footerLogoImg" alt="LOGO YD">
+                        <img src="assets/website-logo/mainLogoDark.svg" class="footerLogoImg" alt="LOGO YD">
                     </figure>
-                    <span class="footerLogoPopper">
+                    <span class="footerLogoPopper whiteColor">
                         Top
                         <i class="fas fa-arrow-up"></i>
                     </span>
                 </a>
                 <div class="footerSocialList">
                     <a href="https://instagram.com/yann.drndt" target="_blank"
-                        class=" footerSocialLink linkHoverEffect LHEWHITE">Instagram</a>
+                        class="footerSocialLink goldColor">Instagram</a>
                     <a href="https://github.com/YannDurandet" target="_blank"
-                        class=" footerSocialLink linkHoverEffect LHEWHITE">GitHub</a>
+                        class="footerSocialLink goldColor">GitHub</a>
                     <a href="https://www.linkedin.com/in/yann-durandet-16472a252/" target="_blank"
-                        class="  footerSocialLink linkHoverEffect LHEWHITE">LinkedIn</a>
-                    <a href="assets/CV_YANN_DURANDET.pdf" target="_blank"
-                        class="  footerSocialLink linkHoverEffect LHEWHITE">CV</a>
+                        class="footerSocialLink goldColor">LinkedIn</a>
+                    <a href="assets/CV_YANN_DURANDET.pdf" target="_blank" class="footerSocialLink goldColor">CV</a>
                 </div>
-                <div class="footerCopyright">
+                <div class="footerCopyright whiteColor">
                     Copyright &copy; 2023 Yann Durandet
                 </div>
             </div>

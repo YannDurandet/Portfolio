@@ -5,6 +5,7 @@ function toggleLogos() {
   const items = document.querySelectorAll(".workItem");
   for (let i = 0; i < items.length; i++) {
     const item = items[i];
+    console.log("logoToggle : ", logoToggle)
     if (logoToggle && item.classList.contains("logoItem")) {
       item.style.display = "block";
     } else {
@@ -24,6 +25,7 @@ function toggleDesigns() {
   const items = document.querySelectorAll(".workItem");
   for (let i = 0; i < items.length; i++) {
     const item = items[i];
+    console.log("designToggle : ", designToggle)
     if (designToggle && item.classList.contains("webDesignItem")) {
       item.style.display = "block";
     } else {
@@ -67,6 +69,8 @@ function showAll() {
   document.body.classList.remove("illustrationToggle");
 
   logoToggle = false;
+  designToggle = false;
+  illustrationToggle = false;
   document.getElementById("showAllButton").style.display = "none";
   document.getElementById("LogoButton").style.display = "block";
   document.getElementById("webDesignButton").style.display = "block";
@@ -94,3 +98,7 @@ function toggleAbout() {
   isAboutOpen = true;
   document.body.classList += " aboutOpen";
 }
+
+/* === Buttons === */
+
+document.querySelectorAll('.button').forEach(button => button.innerHTML = '<div><span>' + button.textContent.trim().split('').join('</span><span>') + '</span></div>');
