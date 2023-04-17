@@ -29,29 +29,37 @@ html {
     text-decoration: none;
 }
 
-.green {
-    color: #09814A;
+.whiteColor {
+    color: #f5f5f5;
+}
+
+.blackColor {
+    color: #000;
+}
+
+.variantGreenBG {
+    background-color: #275efe;
 }
 
 /* =============== Nav =============== */
 
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 100%;
     max-width: 220vh;
     margin: 0 auto;
     height: 70px;
-    background-color: #ffffff8a;
     backdrop-filter: blur(8px);
     position: fixed;
     z-index: 1;
+    background-color: #275dfe27;
 }
 
 .navList {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     margin: 0 24px;
 }
 
@@ -60,61 +68,31 @@ nav {
 }
 
 .squareLink {
-    background-color: #121619;
-    color: #fff;
     font-size: 20px;
     padding: 6px 7px;
-}
-
-.buttonLink {
-    text-decoration: none;
-    background-color: #121619;
-    color: #fff;
-    border: none;
-    padding: 8px 18px;
-    font-size: 18px;
-    font-weight: 700;
-}
-
-.textLink {
-    font-size: 18px;
-    font-weight: 700;
-    color: #121619;
-}
-
-.fa-adjust {
-    color: #000;
-    font-size: 18px;
 }
 
 /* =============== Landing Page =============== */
 
 #landingPage {
-    height: fit-content;
-    background-color: #09814b11;
+    background-color: #f5f5f5;
+}
 
+header {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 100px 0 20px 0;
 }
 
 .personalLogo {
-    align-items: center;
-    margin: 0 auto;
-    width: 320px;
-    height: 320px;
-    padding-top: 80px;
-}
-
-#logoLight {
-    display: flex;
-}
-
-#logoDark {
-    display: none;
+    max-width: 400px;
+    margin: 0 0 0 400px;
 }
 
 .menu {
-    max-width: 650px;
+    max-width: 5 50px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin: 160px auto 0 auto;
 }
@@ -122,7 +100,6 @@ nav {
 .menuText {
     font-size: 18px;
     font-weight: 600;
-    color: #000;
 }
 
 #showAllButton {
@@ -132,7 +109,7 @@ nav {
 /* =============== Work Grid =============== */
 
 #workGrid {
-    background-color: #09814b11;
+    background-color: #f5f5f5;
 }
 
 .container {
@@ -165,8 +142,8 @@ nav {
     transform: translateY(100%);
     opacity: 0;
     transition: opacity 300ms, transform 450ms ease;
-    color: #fff;
     max-width: fit-content;
+    margin-right: 20px;
 }
 
 .workDescTitle {
@@ -179,8 +156,6 @@ nav {
 }
 
 .workDescTag {
-    background-color: #fff;
-    color: black;
     margin-bottom: 8px;
     font-size: 12px;
     border-radius: 12px;
@@ -193,7 +168,6 @@ nav {
 
 footer {
     position: relative;
-    background-color: #242424;
     display: flex;
     padding: 0 0;
 }
@@ -217,17 +191,11 @@ footer {
     margin: 28px 0;
 }
 
-.footerSocialLink,
-.footerCopyright {
-    color: #fff;
-}
-
 .footerLogoPopper {
     position: absolute;
     top: 0px;
     font-weight: 700;
     opacity: 0;
-    color: #fff;
 }
 
 .footerAnchor {
@@ -236,6 +204,7 @@ footer {
 
 .footerSocialLink {
     margin-right: 24px;
+    font-weight: 600;
 }
 
 /* =============== About =============== */
@@ -261,6 +230,7 @@ footer {
     visibility: hidden;
     z-index: -1;
     transition: visibility 1s, z-index 1s, box-shadow 0.5s ease;
+    transition: all 300ms ease;
 }
 
 .aboutOpen .about {
@@ -285,7 +255,6 @@ footer {
 }
 
 .aboutAbout {
-    background-color: rgb(245, 245, 245);
     transform: translateX(110%);
 }
 
@@ -309,7 +278,6 @@ footer {
 }
 
 .aboutLanguage:hover {
-    filter: brightness(80%);
     transform: scale(0.9);
 }
 
@@ -318,6 +286,7 @@ footer {
     bottom: -10px;
     transform: scale(0);
     transition: all 300ms ease;
+    font-weight: 600;
 }
 
 .aboutLanguageImage {
@@ -329,7 +298,6 @@ footer {
     background-image: url(assets/about/about.jpg);
     background-repeat: none;
     background-size: cover;
-    color: #fff;
 }
 
 .aboutTitle {
@@ -347,9 +315,7 @@ footer {
 }
 
 .aboutContact {
-    background-color: #121619;
     border: none;
-    color: #fff;
     font-weight: 700;
     width: 100%;
     padding: 12px 24px;
@@ -361,73 +327,16 @@ footer {
     position: absolute;
     top: 30px;
     right: 40px;
-    color: #121619;
     font-size: 36px;
     z-index: 100;
 }
 
-/* =============== Dark Theme =============== */
+.aboutBouton {
+    margin: 12px auto 12px auto;
+    text-align: center;
+    font-weight: 600;
 
-.darkTheme .fa-adjust {
-    color: #fff;
-    background-color: transparent;
 }
-
-.darkTheme nav {
-    background-color: rgba(255, 255, 255, 0.144);
-}
-
-.darkTheme #landingPage,
-.darkTheme #workGrid {
-    background-color: #121619;
-}
-
-.darkTheme .textLink {
-    color: #fff;
-}
-
-.darkTheme #logoLight {
-    display: none;
-}
-
-.darkTheme #logoDark {
-    display: flex;
-}
-
-.darkTheme .menuText {
-    color: #fff;
-}
-
-.darkTheme .menuText:hover {
-    color: #f8e9ca;
-}
-
-.darkTheme .LHECOLOR:after {
-    background-color: #fff;
-}
-
-.darkTheme .aboutAbout {
-    background-color: #121619;
-}
-
-.darkTheme .aboutTitle,
-.darkTheme .aboutSubtitle,
-.darkTheme .aboutPara,
-.darkTheme .aboutExit {
-    color: #fff;
-}
-
-.darkTheme .aboutContact {
-    background-color: #fff;
-    color: #121619;
-}
-
-.darkTheme .squareLink {
-    background-color: #121619;
-    color: #fff;
-}
-
-
 
 /* === Responsive === */
 
@@ -436,30 +345,8 @@ footer {
         display: none;
     }
 
-    .aboutContact:hover {
-        background-color: #09814A;
-        color: #E5C687;
-        border-radius: 40px;
-    }
-
-    .textLink:hover {
-        color: #E5C687;
-    }
-
-    .buttonLink:hover,
-    .squareLink:hover {
-        background-color: #09814A;
-        color: #E5C687;
-        border-radius: 20px;
-    }
-
-    .fa-adjust:hover {
-        color: #E5C687;
-        border-radius: 20px;
-    }
-
-    .menuText:hover {
-        color: #E5C687;
+    .goldColor:hover {
+        color: #F4CEA4;
     }
 
     .workItem:hover .workDescription {
@@ -476,48 +363,6 @@ footer {
         opacity: 1;
     }
 
-    .darkTheme .squareLink:hover {
-        background-color: #fff;
-        color: #121619;
-    }
-
-    /* === Link Hover Effect (PC Only) === */
-
-    .linkHoverEffect {
-        position: relative;
-    }
-
-    .linkHoverEffect:after {
-        content: "";
-        position: absolute;
-        bottom: -3px;
-        height: 2.5px;
-        width: 0;
-        right: 0;
-        transition: all 300ms ease;
-    }
-
-    .LHECOLOR:after {
-        background-color: #09814A;
-    }
-
-    .LHEBLACK:after {
-        background-color: #000;
-    }
-
-    .LHEWHITE:after {
-        background-color: #fff;
-    }
-
-    .LHEBIGWHITE:after {
-        background-color: #fff;
-        height: 4px;
-    }
-
-    .linkHoverEffect:hover:after {
-        left: 0;
-        width: 100%;
-    }
 }
 
 @media (max-width : 768px) {
@@ -570,8 +415,8 @@ footer {
         margin: 0 auto;
         padding-bottom: 200px;
         height: fit-content;
-        background-color: #242424;
-        border: 5px solid #242424;
+        background-color: #12343B;
+        border: 3px solid #12343B;
         border-radius: 20px;
         margin-bottom: 32px;
     }
@@ -583,7 +428,7 @@ footer {
     }
 
     .workDescTag {
-        background-color: #fff;
+        background-color: #2D545E;
     }
 
     .navLinkButton {
@@ -598,11 +443,15 @@ footer {
     .footerSocialList {
         display: flex;
         flex-direction: column;
-        margin: 0 auto;
+        margin: 30px auto;
         text-align: center;
     }
 
     .footerSocialLink {
         margin-bottom: 24px;
+    }
+
+    .footerLogoPopper {
+        display: 1;
     }
 }
