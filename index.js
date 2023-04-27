@@ -17,6 +17,7 @@ function toggleLogos() {
   document.getElementById("LogoButton").style.display = "none";
   document.getElementById("webDesignButton").style.display = "none";
   document.getElementById("illustrationButton").style.display = "none";
+  document.getElementById("devButton").style.display = "none";
 }
 
 let designToggle = false;
@@ -37,6 +38,7 @@ function toggleDesigns() {
   document.getElementById("LogoButton").style.display = "none";
   document.getElementById("webDesignButton").style.display = "none";
   document.getElementById("illustrationButton").style.display = "none";
+  document.getElementById("devButton").style.display = "none";
 }
 
 let illustrationToggle = false;
@@ -56,6 +58,27 @@ function toggleIllustrations() {
   document.getElementById("LogoButton").style.display = "none";
   document.getElementById("webDesignButton").style.display = "none";
   document.getElementById("illustrationButton").style.display = "none";
+  document.getElementById("devButton").style.display = "none";
+}
+
+let devToggle = false;
+function toggleDev() {
+  devToggle = !devToggle;
+  const items = document.querySelectorAll(".workItem");
+  for (let i = 0; i < items.length; i++) {
+    const item = items[i];
+    if (devToggle && item.classList.contains("webDevItem")) {
+      item.style.display = "block";
+    } else {
+      item.style.display = "none";
+    }
+  }
+  document.body.classList.toggle("devToggle");
+  document.getElementById("showAllButton").style.display = devToggle ? "block" : "none";
+  document.getElementById("LogoButton").style.display = "none";
+  document.getElementById("webDesignButton").style.display = "none";
+  document.getElementById("illustrationButton").style.display = "none";
+  document.getElementById("devButton").style.display = "none";
 }
 
 function showAll() {
@@ -71,10 +94,12 @@ function showAll() {
   logoToggle = false;
   designToggle = false;
   illustrationToggle = false;
+  devToggle = false;
   document.getElementById("showAllButton").style.display = "none";
   document.getElementById("LogoButton").style.display = "block";
   document.getElementById("webDesignButton").style.display = "block";
   document.getElementById("illustrationButton").style.display = "block";
+  document.getElementById("devButton").style.display = "block";
 }
 
 /*=== Dark Mode === */
