@@ -2,379 +2,388 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yann Durandet</title>
-  <link rel="stylesheet" href="navButtons.css">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yann Durandet</title>
+    <link rel="stylesheet" href="navButtons.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <section id="landingPage" class="grayBG">
-    <nav>
-      <!--Nav PC-->
-      <ul class="navList">
-        <li class="navItemHolder">
-          <a href="https://instagram.com/yann_visuals" target="_blank">
-            <i class="fa-brands fa-instagram squareLink click blackBG"></i>
-          </a>
-        </li>
-        <li class="navItemHolder">
-          <a href="https://github.com/YannDurandet" target="_blank">
-            <i class="fa-brands fa-github squareLink click blackBG"></i>
-          </a>
-        </li>
-        <li class="navItemHolder">
-          <a href="https://www.linkedin.com/in/yann-durandet-16472a252/" target="_blank">
-            <i class="fa-brands fa-linkedin-in squareLink click blackBG"></i>
-          </a>
-        </li>
-        <li class="navItemHolder ThanosSnapMOBILE" onclick="toggleAbout()">
-          <a href="#" class="button dark">A&nbsppropos</a>
-        </li>
-        <li class="navItemHolder ThanosSnapMOBILE">
-          <a href="mailto:durandet.yann@gmail.com" class="button dark"></i> Contact</a>
-        </li>
-        <li class="navLink click">
-          <a onclick="toggleContrast()" class=" navLinkText">
-            <i class="fas fa-adjust"></i>
-          </a>
-        </li>
-      </ul>
-      <!--Nav Mobile-->
-      <ul class="navList">
-        <li class="navItemHolder ThanosSnapPC" onclick="toggleAbout()">
-          <a href="#">
-            <i class="fa-regular fa-address-card squareLink click goldColor blackBG"></i>
-          </a>
-        </li>
-        <li class="navItemHolder ThanosSnapPC">
-          <a href="mailto:durandet.yann@gmail.com">
-            <i class="fa-solid fa-envelope squareLink click goldColor blackBG"></i>
-          </a>
-        </li>
-      </ul>
-      </ul>
-    </nav>
-    <header>
-      <img id="personalLogo" class="personalLogoLight" src="assets/website-logo/mainLogoLight.svg" alt="LOGO">
-      <img id="personalLogo" class="personalLogoDark" src="assets/website-logo/mainLogoDark.svg" alt="LOGO">
-      <div class="menu">
-        <a onclick="showAll()" id="showAllButton" class="menubutton linkHoverEffect linkHoverEffectColor">
-          Retour
-        </a>
-        <a onclick="toggleLogos()" id="LogoButton" class="menubutton linkHoverEffect linkHoverEffectColor">
-          Logos
-        </a>
-        <a onclick="toggleDesigns()" id="webDesignButton" class="menubutton linkHoverEffect linkHoverEffectColor">
-          UX&nbsp;&&nbsp;UI
-        </a>
-        <a onclick="toggleIllustrations()" id="illustrationButton" class="menubutton linkHoverEffect linkHoverEffectColor">
-          Illustrations
-        </a>
-        <a onclick="toggleDev()" id="devButton" class="menubutton linkHoverEffect linkHoverEffectColor">
-          Developpement
-        </a>
-      </div>
-    </header>
-  </section>
-  <section id="workGrid">
-    <div class="container">
-      <div class="workItem webDevItem">
-        <div class="workImageHolder">
-          <img src="assets/work-illustrations/matrix.png" class="workImage" alt="Page checkout Quiet">
+    <section id="landingPage" class="grayBG">
+        <nav>
+            <!--Nav PC-->
+            <ul class="navList">
+                <li class="navItemHolder">
+                    <a href="https://instagram.com/yann_visuals" target="_blank">
+                        <i class="fa-brands fa-instagram squareLink click blackBG"></i>
+                    </a>
+                </li>
+                <li class="navItemHolder">
+                    <a href="https://github.com/YannDurandet" target="_blank">
+                        <i class="fa-brands fa-github squareLink click blackBG"></i>
+                    </a>
+                </li>
+                <li class="navItemHolder">
+                    <a href="https://www.linkedin.com/in/yann-durandet-16472a252/" target="_blank">
+                        <i class="fa-brands fa-linkedin-in squareLink click blackBG"></i>
+                    </a>
+                </li>
+                <li class="navItemHolder ThanosSnapMOBILE" onclick="toggleAbout()">
+                    <a href="#" class="button dark">A&nbsppropos</a>
+                </li>
+                <li class="navItemHolder ThanosSnapMOBILE">
+                    <a href="mailto:durandet.yann@gmail.com" class="button dark"></i> Contact</a>
+                </li>
+                <li class="navLink click">
+                    <a onclick="toggleContrast()" class=" navLinkText">
+                        <i class="fas fa-adjust"></i>
+                    </a>
+                </li>
+            </ul>
+            <!--Nav Mobile-->
+            <ul class="navList">
+                <li class="navItemHolder ThanosSnapPC" onclick="toggleAbout()">
+                    <a href="#">
+                        <i class="fa-regular fa-address-card squareLink click goldColor blackBG"></i>
+                    </a>
+                </li>
+                <li class="navItemHolder ThanosSnapPC">
+                    <a href="mailto:durandet.yann@gmail.com">
+                        <i class="fa-solid fa-envelope squareLink click goldColor blackBG"></i>
+                    </a>
+                </li>
+            </ul>
+            </ul>
+        </nav>
+        <header>
+            <img id="personalLogo" class="personalLogoLight" src="assets/website-logo/mainLogoLight.svg" alt="LOGO">
+            <img id="personalLogo" class="personalLogoDark" src="assets/website-logo/mainLogoDark.svg" alt="LOGO">
+            <div class="menu">
+                <a onclick="showAll()" id="showAllButton" class="menubutton linkHoverEffect linkHoverEffectColor">
+                    Retour
+                </a>
+                <a onclick="toggleLogos()" id="LogoButton" class="menubutton linkHoverEffect linkHoverEffectColor">
+                    Logos
+                </a>
+                <a onclick="toggleDesigns()" id="webDesignButton"
+                    class="menubutton linkHoverEffect linkHoverEffectColor">
+                    UX&nbsp;&&nbsp;UI
+                </a>
+                <a onclick="toggleIllustrations()" id="illustrationButton"
+                    class="menubutton linkHoverEffect linkHoverEffectColor">
+                    Illustrations
+                </a>
+                <a onclick="toggleDev()" id="devButton" class="menubutton linkHoverEffect linkHoverEffectColor">
+                    Developpement
+                </a>
+            </div>
+        </header>
+    </section>
+    <section id="workGrid">
+        <div class="container">
+            <div class="workItem webDevItem">
+                <div class="workImageHolder">
+                    <img src="assets/work-illustrations/matrix.png" class="workImage" alt="Page checkout Quiet">
+                </div>
+                <div class="workDescription whiteColor">
+                    <h4 class="workDescTitle">
+                        Pong - Matrix themed
+                    </h4>
+                    <p class="workDescTag goldColorBG">
+                        Web Dev / UI Design
+                    </p>
+                    <p class="workDescText">
+                        Conception d'un jeu Pong en Javascript visuellement basé sur le film Matrix <a class="goldColor"
+                            target="_blank" href="https://yanndurandet.github.io/TheMatrix">Cliquez Ici pour
+                            jouer</a><br> (Note :
+                        Fonctionne mieux sur PC - avec Firefox)
+                    </p>
+                </div>
+            </div>
+            <div class="workItem webDesignItem">
+                <div class="workImageHolder">
+                    <img src="assets/work-illustrations/agence.png" class="workImage" alt="Logo du Garage JDM">
+                </div>
+                <div class="workDescription whiteColor">
+                    <h4 class="workDescTitle">
+                        L'agence
+                    </h4>
+                    <p class="workDescTag goldColorBG">
+                        UX & UI Design
+                    </p>
+                    <p class="workDescText">
+                        Conception d'UI d'une Application d'agence de communication
+                    </p>
+                </div>
+            </div>
+            <div class="workItem webDesignItem">
+                <div class="workImageHolder">
+                    <img src="assets/work-illustrations/design-quiet-racing.jpg" class="workImage"
+                        alt="Page checkout Quiet">
+                </div>
+                <div class="workDescription whiteColor">
+                    <h4 class="workDescTitle">
+                        Quiet Racing
+                    </h4>
+                    <p class="workDescTag goldColorBG">
+                        UX & UI Design
+                    </p>
+                    <p class="workDescText">
+                        Conception de pages web de l'association Quiet Racing.
+                    </p>
+                </div>
+            </div>
+            <div class="workItem webDesignItem logoItem">
+                <div class="workImageHolder">
+                    <img src="assets/work-illustrations/cat-flo.png" class="workImage" alt="Logo du Garage JDM">
+                </div>
+                <div class="workDescription whiteColor">
+                    <h4 class="workDescTitle">
+                        Cat & Flo
+                    </h4>
+                    <p class="workDescTag goldColorBG">
+                        UX & UI Design / Logo
+                    </p>
+                    <p class="workDescText">
+                        Conception de logotype, Et Maquette de site Web pour une marque Fictive.
+                    </p>
+                </div>
+            </div>
+            <div class="workItem logoItem">
+                <div class="workImageHolder">
+                    <img src="assets/work-illustrations/logo-han-garage.jpg" class="workImage" alt="Logo du Garage JDM">
+                </div>
+                <div class="workDescription whiteColor">
+                    <h4 class="workDescTitle">
+                        Han's Garage
+                    </h4>
+                    <p class="workDescTag goldColorBG">
+                        Logo & Charte Graphique
+                    </p>
+                    <p class="workDescText">
+                        Conception d'un logotype & d'une charte graphique pour un client fictif lors d'un partiel de
+                        communication graphique.
+                    </p>
+                </div>
+            </div>
+            <div class="workItem logoItem">
+                <div class="workImageHolder">
+                    <img src="assets/work-illustrations/logo-ever-east.jpg" class="workImage" alt="IMAGE TEXT">
+                </div>
+                <div class="workDescription whiteColor">
+                    <h4 class="workDescTitle">
+                        EVER EAST
+                    </h4>
+                    <p class="workDescTag goldColorBG">
+                        Logo
+                    </p>
+                    <p class="workDescText">
+                        Concept de logo d'une marque fictive orientée sport exterieur, montagne. (Jeu de mot avec
+                        l'Everest)
+                    </p>
+                </div>
+            </div>
+            <div class="workItem logoItem">
+                <div class="workImageHolder">
+                    <img src="assets/work-illustrations/logo-heart-shards.jpg" class="workImage" alt="4 coeurs colorés">
+                </div>
+                <div class="workDescription whiteColor">
+                    <h4 class="workDescTitle">
+                        Heart Shards
+                    </h4>
+                    <p class="workDescTag goldColorBG">
+                        Logo
+                    </p>
+                    <p class="workDescText">
+                        Concept de logo d'une marque fictive. (J'ai très envie de m'en faire un T-Shirt)
+                    </p>
+                </div>
+            </div>
+            <div class="workItem illustrationItem">
+                <div class="workImageHolder">
+                    <img src="assets/work-illustrations/illustration-far-west.jpg" class="workImage" alt="IMAGE TEXT">
+                </div>
+                <div class="workDescription whiteColor">
+                    <h4 class="workDescTitle">
+                        Paysage de Far West
+                    </h4>
+                    <p class="workDescTag goldColorBG">
+                        Illustration
+                    </p>
+                    <p class="workDescText">
+                        Illustration réalisée moi même pour apprendre Adobe Illustrator
+                    </p>
+                </div>
+            </div>
+            <div class="workItem illustrationItem">
+                <div class="workImageHolder">
+                    <img src="assets/work-illustrations/illustration-mountains.jpg" class="workImage"
+                        alt="Mountain Landscape">
+                </div>
+                <div class="workDescription whiteColor">
+                    <h4 class="workDescTitle">
+                        Paysage de Montagne
+                    </h4>
+                    <p class="workDescTag goldColorBG">
+                        Illustration
+                    </p>
+                    <p class="workDescText">
+                        Autre Illustration réalisée pour apprendre Adobe Illustrator.
+                    </p>
+                </div>
+            </div>
+            <div class="workItem webDevItem">
+                <div class="workImageHolder">
+                    <img src="assets/work-illustrations/minecraft.png" class="workImage" alt="Mon Logotype">
+                </div>
+                <div class="workDescription whiteColor">
+                    <h4 class="workDescTitle">
+                        Site Vitrine
+                    </h4>
+                    <p class="workDescTag goldColorBG">
+                        HTML / CSS
+                    </p>
+                    <p class="workDescText">
+                        Conception d'un site vitrine responsive de prestations de constructions Minecraft. <a
+                            target="_blank" class="goldColor" href="https://yanndurandet.github.io/YannDesigns">Voir
+                            ici</a>
+                    </p>
+                </div>
+            </div>
+            <div class="workItem logoItem">
+                <div class="workImageHolder">
+                    <img src="assets/work-illustrations/logo-yann-durandet.jpg" class="workImage" alt="Mon Logotype">
+                </div>
+                <div class="workDescription whiteColor">
+                    <h4 class="workDescTitle">
+                        Logo Personnel
+                    </h4>
+                    <p class="workDescTag goldColorBG">
+                        Logo / Charte Graphique
+                    </p>
+                    <p class="workDescText">
+                        Conception de mon logo représentant mes initiales à l'interieur d'une balise HTML. <a
+                            target="_blank" class="goldColor"
+                            href="https://docs.google.com/presentation/d/1zUxz-gh1vEYcKiGmxnnhIxTIGjcWoaRbJ6IPoTd4pjo/edit?usp=sharing">Voir
+                            la charte graphique</a>
+                    </p>
+                </div>
+            </div>
+            <div class="workItem illustrationItem">
+                <div class="workImageHolder">
+                    <img src="assets/work-illustrations/illustration-han-solo.jpg" class="workImage" alt="IMAGE TEXT">
+                </div>
+                <div class="workDescription whiteColor">
+                    <h4 class="workDescTitle">
+                        Solo : A Star Wars Story
+                    </h4>
+                    <p class="workDescTag goldColorBG">
+                        illustration
+                    </p>
+                    <p class="workDescText">
+                        Pour apprendre Photoshop & Illustrator j'ai réalisé une affiche pour le film Solo : A Star Wars
+                        Story. Le texte en aurebesh dit "Han Solo a tiré le 1er"
+                    </p>
+                </div>
+            </div>
         </div>
-        <div class="workDescription whiteColor">
-          <h4 class="workDescTitle">
-            Pong - Matrix themed
-          </h4>
-          <p class="workDescTag goldColorBG">
-            Web Dev / UI Design
-          </p>
-          <p class="workDescText">
-            Conception d'un jeu Pong en Javascript visuellement basé sur le film Matrix <a class="goldColor"
-              target="_blank" href="https://yanndurandet.github.io/TheMatrix">Cliquez Ici pour jouer</a><br> (Note :
-            Fonctionne mieux sur PC - avec Firefox)
-          </p>
+    </section>
+    <div class="about">
+        <div class="aboutHalf aboutIllustration">
         </div>
-      </div>
-      <div class="workItem webDesignItem">
-        <div class="workImageHolder">
-          <img src="assets/work-illustrations/agence.png" class="workImage" alt="Logo du Garage JDM">
+        <div class="aboutHalf aboutAbout blackBG">
+            <h3 class="aboutTitle whiteColor">A propos de moi</h3>
+            <h4 class="aboutSubtitle whiteColor">Web Designer / Front-end Developer</h4>
+            <p class="aboutPara">
+                Je m'apelle Yann, j'ai 20 ans et un peu d'expérience en conception & réalisation de sites web. J'ai
+                effectué un stage chez <a href="https://xqual.com" target="_blank"><b class="goldColor">Xqual</b></a> en
+                Septembre 2022.
+                <br>
+                J'apprends actuellement le développement & design web, ainsi que le Marketing digital à
+                la <a href="https://normandiewebschool.fr" target="_blank"><b class="goldColor">Normandie Web
+                        School</b></a>
+                depuis Octobre 2022, et suis à la recherche d'une alternance dans la Métropole Rouennaise.
+            </p>
+            <div class="aboutLanguages">
+                <figure class="aboutLanguage">
+                    <img class="aboutLanguageImage"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
+                        alt="">
+                    <span class="languageName whiteColor">HTML</span>
+                </figure>
+                <figure class="aboutLanguage">
+                    <img class="aboutLanguageImage" src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png"
+                        alt="">
+                    <span class="languageName whiteColor">CSS</span>
+                </figure>
+                <figure class="aboutLanguage">
+                    <img class="aboutLanguageImage"
+                        src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png" alt="">
+                    <span class="languageName whiteColor">JavaScript</span>
+                </figure>
+                <figure class="aboutLanguage">
+                    <img class="aboutLanguageImage"
+                        src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg" alt="">
+                    <span class="languageName whiteColor">Photoshop</span>
+                </figure>
+                <figure class="aboutLanguage">
+                    <img class="aboutLanguageImage"
+                        src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg" alt="">
+                    <span class="languageName whiteColor">Illustrator</span>
+                </figure>
+                <figure class="aboutLanguage">
+                    <img class="aboutLanguageImage"
+                        src="https://upload.wikimedia.org/wikipedia/commons/4/40/Adobe_Premiere_Pro_CC_icon.svg" alt="">
+                    <span class="languageName whiteColor">PremierePro</span>
+                </figure>
+                <figure class="aboutLanguage">
+                    <img class="aboutLanguageImage" src="assets/about/Figma.png" alt="">
+                    <span class="languageName whiteColor">Figma</span>
+                </figure>
+                <figure class="aboutLanguage">
+                    <img class="aboutLanguageImage"
+                        src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Blender_logo_no_text.svg" alt="">
+                    <span class="languageName whiteColor">Blender</span>
+                </figure>
+            </div>
+            <a href="mailto:durandet.yann@gmail.com" class="button white aboutBouton">
+                Me&nbsp;Contacter
+            </a>
+            <a href="assets/CV_YANN_DURANDET.pdf" target="_blank" class="button white aboutBouton">
+                Mon&nbsp;CV
+            </a>
+            <i class="fas fa-times aboutExit click goldColor" onclick="toggleAbout()"></i>
         </div>
-        <div class="workDescription whiteColor">
-          <h4 class="workDescTitle">
-            L'agence
-          </h4>
-          <p class="workDescTag goldColorBG">
-            UX & UI Design
-          </p>
-          <p class="workDescText">
-            Conception d'UI d'une Application d'agence de communication
-          </p>
-        </div>
-      </div>
-      <div class="workItem webDesignItem">
-        <div class="workImageHolder">
-          <img src="assets/work-illustrations/design-quiet-racing.jpg" class="workImage" alt="Page checkout Quiet">
-        </div>
-        <div class="workDescription whiteColor">
-          <h4 class="workDescTitle">
-            Quiet Racing
-          </h4>
-          <p class="workDescTag goldColorBG">
-            UX & UI Design
-          </p>
-          <p class="workDescText">
-            Conception de pages web de l'association Quiet Racing.
-          </p>
-        </div>
-      </div>
-      <div class="workItem webDesignItem logoItem">
-        <div class="workImageHolder">
-          <img src="assets/work-illustrations/cat-flo.png" class="workImage" alt="Logo du Garage JDM">
-        </div>
-        <div class="workDescription whiteColor">
-          <h4 class="workDescTitle">
-            Cat & Flo
-          </h4>
-          <p class="workDescTag goldColorBG">
-            UX & UI Design / Logo
-          </p>
-          <p class="workDescText">
-            Conception de logotype, Et Maquette de site Web pour une marque Fictive.
-          </p>
-        </div>
-      </div>
-      <div class="workItem logoItem">
-        <div class="workImageHolder">
-          <img src="assets/work-illustrations/logo-han-garage.jpg" class="workImage" alt="Logo du Garage JDM">
-        </div>
-        <div class="workDescription whiteColor">
-          <h4 class="workDescTitle">
-            Han's Garage
-          </h4>
-          <p class="workDescTag goldColorBG">
-            Logo & Charte Graphique
-          </p>
-          <p class="workDescText">
-            Conception d'un logotype & d'une charte graphique pour un client fictif lors d'un partiel de
-            communication graphique.
-          </p>
-        </div>
-      </div>
-      <div class="workItem logoItem">
-        <div class="workImageHolder">
-          <img src="assets/work-illustrations/logo-ever-east.jpg" class="workImage" alt="IMAGE TEXT">
-        </div>
-        <div class="workDescription whiteColor">
-          <h4 class="workDescTitle">
-            EVER EAST
-          </h4>
-          <p class="workDescTag goldColorBG">
-            Logo
-          </p>
-          <p class="workDescText">
-            Concept de logo d'une marque fictive orientée sport exterieur, montagne. (Jeu de mot avec
-            l'Everest)
-          </p>
-        </div>
-      </div>
-      <div class="workItem logoItem">
-        <div class="workImageHolder">
-          <img src="assets/work-illustrations/logo-heart-shards.jpg" class="workImage" alt="4 coeurs colorés">
-        </div>
-        <div class="workDescription whiteColor">
-          <h4 class="workDescTitle">
-            Heart Shards
-          </h4>
-          <p class="workDescTag goldColorBG">
-            Logo
-          </p>
-          <p class="workDescText">
-            Concept de logo d'une marque fictive. (J'ai très envie de m'en faire un T-Shirt)
-          </p>
-        </div>
-      </div>
-      <div class="workItem illustrationItem">
-        <div class="workImageHolder">
-          <img src="assets/work-illustrations/illustration-far-west.jpg" class="workImage" alt="IMAGE TEXT">
-        </div>
-        <div class="workDescription whiteColor">
-          <h4 class="workDescTitle">
-            Paysage de Far West
-          </h4>
-          <p class="workDescTag goldColorBG">
-            Illustration
-          </p>
-          <p class="workDescText">
-            Illustration réalisée moi même pour apprendre Adobe Illustrator
-          </p>
-        </div>
-      </div>
-      <div class="workItem illustrationItem">
-        <div class="workImageHolder">
-          <img src="assets/work-illustrations/illustration-mountains.jpg" class="workImage" alt="Mountain Landscape">
-        </div>
-        <div class="workDescription whiteColor">
-          <h4 class="workDescTitle">
-            Paysage de Montagne
-          </h4>
-          <p class="workDescTag goldColorBG">
-            Illustration
-          </p>
-          <p class="workDescText">
-            Autre Illustration réalisée pour apprendre Adobe Illustrator.
-          </p>
-        </div>
-      </div>
-      <div class="workItem webDevItem">
-        <div class="workImageHolder">
-          <img src="assets/work-illustrations/minecraft.png" class="workImage" alt="Mon Logotype">
-        </div>
-        <div class="workDescription whiteColor">
-          <h4 class="workDescTitle">
-            Site Vitrine
-          </h4>
-          <p class="workDescTag goldColorBG">
-            HTML / CSS
-          </p>
-          <p class="workDescText">
-            Conception d'un site vitrine responsive de prestations de constructions Minecraft. <a target="_blank"
-              class="goldColor" href="https://yanndurandet.github.io/YannDesigns">Voir ici</a>
-          </p>
-        </div>
-      </div>
-      <div class="workItem logoItem">
-        <div class="workImageHolder">
-          <img src="assets/work-illustrations/logo-yann-durandet.jpg" class="workImage" alt="Mon Logotype">
-        </div>
-        <div class="workDescription whiteColor">
-          <h4 class="workDescTitle">
-            Logo Personnel
-          </h4>
-          <p class="workDescTag goldColorBG">
-            Logo / Charte Graphique
-          </p>
-          <p class="workDescText">
-            Conception de mon logo représentant mes initiales à l'interieur d'une balise HTML. <a target="_blank"
-              class="goldColor"
-              href="https://docs.google.com/presentation/d/1zUxz-gh1vEYcKiGmxnnhIxTIGjcWoaRbJ6IPoTd4pjo/edit?usp=sharing">Voir
-              la charte graphique</a>
-          </p>
-        </div>
-      </div>
-      <div class="workItem illustrationItem">
-        <div class="workImageHolder">
-          <img src="assets/work-illustrations/illustration-han-solo.jpg" class="workImage" alt="IMAGE TEXT">
-        </div>
-        <div class="workDescription whiteColor">
-          <h4 class="workDescTitle">
-            Solo : A Star Wars Story
-          </h4>
-          <p class="workDescTag goldColorBG">
-            illustration
-          </p>
-          <p class="workDescText">
-            Pour apprendre Photoshop & Illustrator j'ai réalisé une affiche pour le film Solo : A Star Wars
-            Story. Le texte en aurebesh dit "Han Solo a tiré le 1er"
-          </p>
-        </div>
-      </div>
     </div>
-  </section>
-  <div class="about">
-    <div class="aboutHalf aboutIllustration">
-    </div>
-    <div class="aboutHalf aboutAbout blackBG">
-      <h3 class="aboutTitle whiteColor">A propos de moi</h3>
-      <h4 class="aboutSubtitle whiteColor">Web Designer / Front-end Developer</h4>
-      <p class="aboutPara">
-        Je m'apelle Yann, j'ai 20 ans et un peu d'expérience en conception & réalisation de sites web. J'ai
-        effectué un stage chez <a href="https://xqual.com" target="_blank"><b class="goldColor">Xqual</b></a> en
-        Septembre 2022.
-        <br>
-        J'apprends actuellement le développement & design web, ainsi que le Marketing digital à
-        la <a href="https://normandiewebschool.fr" target="_blank"><b class="goldColor">Normandie Web
-            School</b></a>
-        depuis Octobre 2022, et suis à la recherche d'une alternance dans la Métropole Rouennaise.
-      </p>
-      <div class="aboutLanguages">
-        <figure class="aboutLanguage">
-          <img class="aboutLanguageImage"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
-            alt="">
-          <span class="languageName whiteColor">HTML</span>
-        </figure>
-        <figure class="aboutLanguage">
-          <img class="aboutLanguageImage" src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png" alt="">
-          <span class="languageName whiteColor">CSS</span>
-        </figure>
-        <figure class="aboutLanguage">
-          <img class="aboutLanguageImage" src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png"
-            alt="">
-          <span class="languageName whiteColor">JavaScript</span>
-        </figure>
-        <figure class="aboutLanguage">
-          <img class="aboutLanguageImage"
-            src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg" alt="">
-          <span class="languageName whiteColor">Photoshop</span>
-        </figure>
-        <figure class="aboutLanguage">
-          <img class="aboutLanguageImage"
-            src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg" alt="">
-          <span class="languageName whiteColor">Illustrator</span>
-        </figure>
-        <figure class="aboutLanguage">
-          <img class="aboutLanguageImage"
-            src="https://upload.wikimedia.org/wikipedia/commons/4/40/Adobe_Premiere_Pro_CC_icon.svg" alt="">
-          <span class="languageName whiteColor">PremierePro</span>
-        </figure>
-        <figure class="aboutLanguage">
-          <img class="aboutLanguageImage" src="assets/about/Figma.png" alt="">
-          <span class="languageName whiteColor">Figma</span>
-        </figure>
-        <figure class="aboutLanguage">
-          <img class="aboutLanguageImage"
-            src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Blender_logo_no_text.svg" alt="">
-          <span class="languageName whiteColor">Blender</span>
-        </figure>
-      </div>
-      <a href="mailto:durandet.yann@gmail.com" class="button white aboutBouton">
-        Me&nbsp;Contacter
-      </a>
-      <a href="assets/CV_YANN_DURANDET.pdf" target="_blank" class="button white aboutBouton">
-        Mon&nbsp;CV
-      </a>
-      <i class="fas fa-times aboutExit click goldColor" onclick="toggleAbout()"></i>
-    </div>
-  </div>
-  <footer class="blackBG">
-    <div class="container">
-      <div class="footerRow">
-        <a href="#" class="footerAnchor">
-          <figure class="footerLogo">
-            <img src="assets/website-logo/mainLogoLight.svg" class="footerLogoImg" alt="LOGO YD">
-          </figure>
-          <span class="footerLogoPopper goldColor">
-            Top
-            <i class="fas fa-arrow-up goldColor"></i>
-          </span>
-        </a>
-        <div class="footerSocialList">
-          <a href="https://instagram.com/yann.drndt" target="_blank" class="footerSocialLink goldColor">Instagram</a>
-          <a href="https://github.com/YannDurandet" target="_blank" class="footerSocialLink goldColor">GitHub</a>
-          <a href="https://www.linkedin.com/in/yann-durandet-16472a252/" target="_blank"
-            class="footerSocialLink goldColor">LinkedIn</a>
-          <a href="assets/CV_YANN_DURANDET.pdf" target="_blank" class="footerSocialLink goldColor">CV</a>
+    <footer class="blackBG">
+        <div class="container">
+            <div class="footerRow">
+                <a href="#" class="footerAnchor">
+                    <figure class="footerLogo">
+                        <img src="assets/website-logo/mainLogoLight.svg" class="footerLogoImg" alt="LOGO YD">
+                    </figure>
+                    <span class="footerLogoPopper goldColor">
+                        Top
+                        <i class="fas fa-arrow-up goldColor"></i>
+                    </span>
+                </a>
+                <div class="footerSocialList">
+                    <a href="https://instagram.com/yann.drndt" target="_blank"
+                        class="footerSocialLink goldColor">Instagram</a>
+                    <a href="https://github.com/YannDurandet" target="_blank"
+                        class="footerSocialLink goldColor">GitHub</a>
+                    <a href="https://www.linkedin.com/in/yann-durandet-16472a252/" target="_blank"
+                        class="footerSocialLink goldColor">LinkedIn</a>
+                    <a href="assets/CV_YANN_DURANDET.pdf" target="_blank" class="footerSocialLink goldColor">CV</a>
+                </div>
+                <div class="footerCopyright goldColor">
+                    Copyright &copy; 2023 Yann Durandet
+                </div>
+            </div>
         </div>
-        <div class="footerCopyright goldColor">
-          Copyright &copy; 2023 Yann Durandet
-        </div>
-      </div>
-    </div>
-  </footer>
+    </footer>
 </body>
 <script src="https://kit.fontawesome.com/3c2baa7ea7.js" crossorigin="anonymous"></script>
 <script src="index.js" defer async></script>
