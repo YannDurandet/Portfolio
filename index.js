@@ -1,4 +1,5 @@
-/* === Work Toggle === */
+/* =============== Work Toggle =============== */
+
 let logoToggle = false;
 function toggleLogos() {
   logoToggle = !logoToggle;
@@ -102,8 +103,9 @@ function showAll() {
   document.getElementById("devButton").style.display = "block";
 }
 
-/*=== Dark Mode === */
-let contrastToggle = false;
+/* =============== Dark Mode =============== */
+
+let contrastToggle = false
 
 function toggleContrast() {
   contrastToggle = !contrastToggle;
@@ -124,9 +126,8 @@ function toggleContrast() {
   }
 }
 
+/* =============== About =============== */
 
-
-/* === About === */
 let isAboutOpen = false;
 function toggleAbout() {
   if (isAboutOpen) {
@@ -137,6 +138,6 @@ function toggleAbout() {
   document.body.classList += " aboutOpen";
 }
 
-/* === Buttons === */
+/* =============== Buttons =============== */
 
 document.querySelectorAll('.button').forEach(button => button.innerHTML = '<div><span>' + button.textContent.trim().split('').join('</span><span>') + '</span></div>');
