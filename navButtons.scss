@@ -1,13 +1,14 @@
 .button {
     &.dark {
-        --background: #C89666;
+        --background: #000000;
+        --text: #ffffff;
         --shadow: 0 2px 8px -1px #{rgba(#151924, .32)};
         --shadow-hover: 0 4px 20px -2px #{rgba(#293146, .75)};
     }
 
     &.white {
-        --background: #fff;
-        --text: #C89666;
+        --background: #C89666;
+        --text: #fff;
         --shadow: 0 2px 8px -1px #{rgba(#121621, .04)};
         --shadow-hover: 0 4px 20px -2px #{rgba(#121621, .12)};
     }
@@ -18,13 +19,13 @@
 }
 
 .button {
-    --background: #275efe;
+    --background: #C89666;
     --text: #fff;
     --font-size: 16px;
     --duration: .44s;
     --move-hover: -5px;
-    --shadow: 0 2px 8px -1px #{rgba(#275efe, .32)};
-    --shadow-hover: 0 4px 20px -2px #{rgba(#275efe, .5)};
+    --shadow: 0 2px 8px -1px #{rgba(#C89666, .32)};
+    --shadow-hover: 0 4px 20px -2px #{rgba(#C89666, .5)};
     --font-shadow: var(--font-size);
     padding: 12px 24px;
     font-family: 'Raleway';

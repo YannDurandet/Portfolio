@@ -104,14 +104,27 @@ function showAll() {
 
 /*=== Dark Mode === */
 let contrastToggle = false;
+
 function toggleContrast() {
   contrastToggle = !contrastToggle;
   if (contrastToggle) {
-    document.body.classList += "darkTheme"
+    document.body.classList.add("darkTheme");
+    var buttons = document.getElementsByClassName("button");
+    for (var i = 0; i < buttons.length; i++) {
+      buttons[i].classList.remove("dark");
+      buttons[i].classList.add("white");
+    }
   } else {
-    document.body.classList.remove("darkTheme")
+    document.body.classList.remove("darkTheme");
+    var buttons = document.getElementsByClassName("button");
+    for (var i = 0; i < buttons.length; i++) {
+      buttons[i].classList.remove("white");
+      buttons[i].classList.add("dark");
+    }
   }
 }
+
+
 
 /* === About === */
 let isAboutOpen = false;

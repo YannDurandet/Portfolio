@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1011.41 844.34">
   <defs>
-    <style>
+    <style id="logoStyles">
       .cls-1 {
-        fill: #f1f1f1;
+        fill: #C89666;
       }
 
       .cls-2 {
-        fill: #f1f1f1;
+        fill: #C89666;
       }
 
       .cls-3 {
-        fill: #f1f1f1;
+        fill: #C89666;
       }
     </style>
   </defs>
