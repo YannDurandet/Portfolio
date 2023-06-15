@@ -13,6 +13,13 @@
 .button.fast {
   --duration: .32s;
 }
+.button:hover {
+  --background: linear-gradient(90deg, rgba(255, 177, 71, 1) 0%, rgba(255, 108, 99, 1) 50%, rgba(184, 106, 223, 1) 100%);
+  --shadow: var(--shadow-hover);
+}
+.button:hover span {
+  --m: calc(var(--font-size) * -1);
+}
 
 .button {
   --background: #C89666;
@@ -20,8 +27,8 @@
   --font-size: 16px;
   --duration: .44s;
   --move-hover: -5px;
-  --shadow: 0 2px 8px -1px rgba(200, 150, 102, 0.32);
-  --shadow-hover: 0 4px 20px -2px rgba(200, 150, 102, 0.5);
+  --shadow: 0 2px 8px -1px rgba(#C89666, .32);
+  --shadow-hover: 0 4px 20px -2px rgba(#C89666, .5);
   --font-shadow: var(--font-size);
   padding: 12px 24px;
   font-family: "Raleway";
@@ -37,7 +44,9 @@
   box-shadow: var(--shadow);
   border-radius: 30px;
   transform: translateY(var(--y)) translateZ(0);
-  transition: transform var(--duration) ease, box-shadow var(--duration) ease;
+  transition-property: transform, box-shadow, background;
+  transition-duration: var(--duration);
+  transition-timing-function: ease;
 }
 .button div {
   display: flex;
@@ -48,7 +57,9 @@
   display: block;
   backface-visibility: hidden;
   font-style: normal;
-  transition: transform var(--duration) ease;
+  transition-property: transform;
+  transition-duration: var(--duration);
+  transition-timing-function: ease;
   transform: translateY(var(--m)) translateZ(0);
 }
 .button div span:nth-child(1) {
@@ -129,6 +140,7 @@
 .button:hover {
   --y: var(--move-hover);
   --shadow: var(--shadow-hover);
+  --background: linear-gradient(90deg, rgba(255, 177, 71, 1) 0%, rgba(255, 108, 99, 1) 50%, rgba(184, 106, 223, 1) 100%);
 }
 .button:hover span {
   --m: calc(var(--font-size) * -1);
