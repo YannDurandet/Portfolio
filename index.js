@@ -112,32 +112,19 @@ function toggleContrast() {
   if (contrastToggle) {
     document.body.classList.add("darkTheme");
     var buttons = document.getElementsByClassName("button");
-    for (var i = 0; i < buttons.length; i++) {
-      buttons[i].classList.remove("dark");
-      buttons[i].classList.add("white");
-    }
   } else {
     document.body.classList.remove("darkTheme");
     var buttons = document.getElementsByClassName("button");
-    for (var i = 0; i < buttons.length; i++) {
-      buttons[i].classList.remove("white");
-      buttons[i].classList.add("dark");
-    }
   }
-}
-
-/* =============== About =============== */
-
-let isAboutOpen = false;
-function toggleAbout() {
-  if (isAboutOpen) {
-    isAboutOpen = false;
-    return document.body.classList.remove("aboutOpen");
-  }
-  isAboutOpen = true;
-  document.body.classList += " aboutOpen";
 }
 
 /* =============== Buttons =============== */
 
 document.querySelectorAll('.button').forEach(button => button.innerHTML = '<div><span>' + button.textContent.trim().split('').join('</span><span>') + '</span></div>');
+
+/* =============== NavBar =============== */
+
+function toggleNavbar() {
+  var navbarResponsive = document.querySelector('.navbarResponsive');
+  navbarResponsive.classList.toggle('show');
+}q
