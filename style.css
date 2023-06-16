@@ -1,6 +1,7 @@
 /* =============== Main =============== */
 
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -19,6 +20,7 @@ a {
 
 html {
   scroll-behavior: smooth;
+  background-color: #f0f0f0;
 }
 
 /* =============== Main Classes =============== */
@@ -110,7 +112,7 @@ html {
   margin-bottom: 10px;
   padding-top: 12px;
   padding-left: 12px;
-  border-left: 2px solid rgb(140, 140, 140);
+  border-left: 2px solid rgb(81, 81, 81);
 }
 
 .navSocialIcon {
@@ -125,7 +127,7 @@ html {
 .navSocialIcon:hover {
   background: linear-gradient(90deg, rgba(255, 177, 71, 1) 0%, rgba(255, 108, 99, 1) 50%, rgba(184, 106, 223, 1) 100%);
   background-clip: text;
-  color:transparent;
+  color: transparent;
 }
 
 .navbarFooter {
@@ -136,17 +138,16 @@ html {
 
 
 /* =============== Landing Page =============== */
+
 #landingPage {
   background-color: #f0f0f0;
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 10px;
 }
 
 header {
-  padding: 40px 0 20px 0;
   display: flex;
   flex-direction: column;
-  margin-top: -20px;
 }
 
 #hero {
@@ -170,6 +171,13 @@ header {
   margin-bottom: 20px;
 }
 
+.kenobi {
+  font-weight: 400;
+  font-style: italic;
+  font-size: 40px;
+  color: #242424;
+}
+
 .colortest {
   background: linear-gradient(90deg, rgba(255, 177, 71, 1) 0%, rgba(255, 108, 99, 1) 50%, rgba(184, 106, 223, 1) 100%);
   background-clip: text;
@@ -185,34 +193,11 @@ header {
   max-width: 500px;
 }
 
-/* =============== MENU ===============
-.menu {
-  width: 800px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 60px auto;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: stretch;
-}
-
-.menubutton {
-  font-weight: 600;
-  cursor: pointer;
-  color: black;
-}
-
-#showAllButton {
-  display: none;
-}
-
-*/
 /* =============== About =============== */
 
 #About {
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 120px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -225,7 +210,7 @@ header {
   margin: 0 auto;
 }
 
-.centeredLeft{
+.centeredLeft {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -243,7 +228,7 @@ header {
   margin-bottom: 24px;
 }
 
-.centeredMiddle{
+.centeredMiddle {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -288,14 +273,12 @@ header {
   height: 24px;
 }
 
-.resumeBox:hover{
-  background-color: #3a3a3a;
+.resumeBox:hover {
+  background-color: #252525;
 }
 
 .resumeBox:hover .resumeLink {
-  background: linear-gradient(90deg, rgba(255, 177, 71, 1) 0%, rgba(255, 108, 99, 1) 50%, rgba(184, 106, 223, 1) 100%);
-  background-clip: text;
-  color: transparent;
+color: rgba(255, 177, 71, 1);
 }
 
 .aboutImg {
@@ -328,11 +311,11 @@ header {
 }
 
 
-.coordsText{
+.coordsText {
   font-weight: 600;
 }
 
-.coordsIcon{
+.coordsIcon {
   margin-right: 12px;
 }
 
@@ -342,24 +325,26 @@ header {
   margin-top: 12px;
 }
 
-.infoBox:first-child{
+.infoBox:first-child {
   margin-left: 12px;
   margin-right: 112px;
 }
-.infoHeading{
+
+.infoHeading {
   display: flex;
   align-items: center;
   flex-direction: row;
 }
 
-.infoH2{
+.infoH2 {
   background: linear-gradient(90deg, rgba(255, 177, 71, 1) 0%, rgba(255, 108, 99, 1) 50%, rgba(184, 106, 223, 1) 100%);
   background-clip: text;
   color: transparent;
   font-size: 48px;
   margin-right: 8px;
 }
-.quote{
+
+.quote {
   background-color: black;
   font-size: 20px;
   padding: 40px;
@@ -373,11 +358,52 @@ header {
   z-index: 4;
 }
 
-.quoteImg{
+.quoteImg {
   width: 64px;
   margin-left: -12px;
   margin-top: -96px;
   z-index: 3;
+}
+
+/* =============== MENU =============== */
+
+#workMenu {
+  padding-top: 40px;
+  background-color: #f0f0f0;
+}
+
+.menuTop{
+  width: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto 50px auto;
+  flex-direction: row;
+}
+
+.menuButtonTop:hover{
+  background: linear-gradient(90deg, rgba(255, 177, 71, 1) 0%, rgba(255, 108, 99, 1) 50%, rgba(184, 106, 223, 1) 100%);
+  background-clip: text;
+  color: transparent;
+}
+#menuBottom {
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  flex-direction: row;
+
+}
+
+.menubutton {
+  font-weight: 600;
+  cursor: pointer;
+  color: black;
+}
+
+#showAllButton {
+  display: none;
 }
 
 /* =============== Work Grid =============== */
@@ -442,6 +468,20 @@ header {
   font-weight: 600;
   width: fit-content;
   padding: 2px 8px;
+}
+
+.waveHolder{
+  margin-bottom: -50px;
+  margin-left: -10px;
+}
+
+/* =============== DETAIL =============== */
+
+#detailledGrid{
+  display: none;
+}
+#brickIcon:hover {
+  fill: red; /* Change the color to your desired color */
 }
 
 /* =============== Footer =============== */
@@ -539,27 +579,13 @@ footer {
 }
 
 /* === DARK THEME === */
-.darkTheme .personalLogoLight,
-.personalLogoDark {
-  display: block;
-}
-
-.darkTheme .personalLogoDark,
-.personalLogoLight {
-  display: none;
-}
-
-.darkTheme .squareLink {
-  background-color: #C89666;
-  color: white;
-}
 
 .alwaysWhite {
   color: white;
 }
 
-.darkTheme .fa-adjust {
-  color: #C89666;
+.alwaysWhite {
+  color: black;
 }
 
 .darkTheme .fa-adjust:hover {
@@ -567,8 +593,10 @@ footer {
 }
 
 .darkTheme #landingPage,
-.darkTheme #workGrid {
-  background-color: #272727;
+.darkTheme #workGrid,
+.darkTheme #About,
+.darkTheme #detailledGrid {
+  background-color: #373737;
 }
 
 .darkTheme nav {
@@ -580,10 +608,6 @@ footer {
   background-color: rgba(255, 255, 255, 0.581);
 }
 
-.darkTheme .menubutton {
-  color: #C89666;
-}
-
 .darkTheme .fa-adjust,
 .darkTheme p,
 .darkTheme h1 {
@@ -593,13 +617,6 @@ footer {
 /* === Responsive === */
 
 @media (min-width: 769px) {
-  .navbarToggle {
-    display: none;
-  }
-
-  .ThanosSnapPC {
-    display: none;
-  }
 
   .workItem:hover .workDescription {
     opacity: 1;
@@ -613,15 +630,5 @@ footer {
   .footerAnchor:hover .footerLogoPopper {
     transform: translateX(20px);
     opacity: 1;
-  }
-}
-
-@media (max-width: 768px) {
-  .navbar {
-    display: none;
-  }
-
-  .navbarToggle {
-    display: block;
   }
 }

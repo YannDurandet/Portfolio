@@ -103,6 +103,62 @@ function showAll() {
   document.getElementById("devButton").style.display = "block";
 }
 
+/* =============== GRID DETAILS =============== */
+let detailToggle = false;
+
+function showDetails() {
+  detailToggle = !detailToggle;
+  const menuBottom = document.getElementById("menuBottom");
+  const workGrid = document.getElementById("workGrid");
+  const detailledGrid = document.getElementById("detailledGrid");
+
+  workGrid.style.transition = "opacity 500ms";
+  detailledGrid.style.transition = "opacity 500ms";
+
+  if (detailToggle) {
+    workGrid.style.opacity = "0";
+    setTimeout(function() {
+      workGrid.style.display = "none";
+      detailledGrid.style.display = "block";
+      setTimeout(function() {
+        detailledGrid.style.opacity = "1";
+      }, 10);
+    }, 500);
+  } else {
+    detailledGrid.style.opacity = "0";
+    setTimeout(function() {
+      detailledGrid.style.display = "none";
+      workGrid.style.display = "block";
+      setTimeout(function() {
+        workGrid.style.opacity = "1";
+      }, 10);
+    }, 500);
+  }
+}
+
+function showGrid() {
+  const menuBottom = document.getElementById("menuBottom");
+  const workGrid = document.getElementById("workGrid");
+  const detailledGrid = document.getElementById("detailledGrid");
+
+  workGrid.style.transition = "opacity 500ms";
+  detailledGrid.style.transition = "opacity 500ms";
+
+  detailledGrid.style.opacity = "0";
+  setTimeout(function() {
+    detailledGrid.style.display = "none";
+    workGrid.style.display = "block";
+    setTimeout(function() {
+      workGrid.style.opacity = "1";
+    }, 10);
+  }, 500);
+
+  detailToggle = false;
+}
+
+
+
+
 /* =============== Dark Mode =============== */
 
 let contrastToggle = false
@@ -127,4 +183,27 @@ document.querySelectorAll('.button').forEach(button => button.innerHTML = '<div>
 function toggleNavbar() {
   var navbarResponsive = document.querySelector('.navbarResponsive');
   navbarResponsive.classList.toggle('show');
-}q
+}
+
+// let detailToggle = false;
+
+// function toggleDetails() {
+//   detailToggle = !detailToggle;
+//   const menuBottom = document.getElementById("menuBottom");
+//   const workGrid = document.getElementById("workGrid");
+//   const detailledGrid = document.getElementById("detailledGrid");
+
+//   workGrid.style.display = "none";
+//   detailledGrid.style.display = "block";
+// }
+
+// function showGrid() {
+//   const menuBottom = document.getElementById("menuBottom");
+//   const workGrid = document.getElementById("workGrid");
+//   const detailledGrid = document.getElementById("detailledGrid");
+
+//   workGrid.style.display = "block";
+//   detailledGrid.style.display = "none";
+
+//   detailToggle = false;
+// }
