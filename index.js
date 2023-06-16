@@ -184,26 +184,3 @@ function toggleNavbar() {
   var navbarResponsive = document.querySelector('.navbarResponsive');
   navbarResponsive.classList.toggle('show');
 }
-
-// let detailToggle = false;
-
-// function toggleDetails() {
-//   detailToggle = !detailToggle;
-//   const menuBottom = document.getElementById("menuBottom");
-//   const workGrid = document.getElementById("workGrid");
-//   const detailledGrid = document.getElementById("detailledGrid");
-
-//   workGrid.style.display = "none";
-//   detailledGrid.style.display = "block";
-// }
-
-// function showGrid() {
-//   const menuBottom = document.getElementById("menuBottom");
-//   const workGrid = document.getElementById("workGrid");
-//   const detailledGrid = document.getElementById("detailledGrid");
-
-//   workGrid.style.display = "block";
-//   detailledGrid.style.display = "none";
-
-//   detailToggle = false;
-// }

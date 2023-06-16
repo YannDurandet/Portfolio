@@ -242,6 +242,7 @@ header {
   color: transparent;
   font-size: 48px;
   margin-bottom: 16px;
+  width: fit-content;
 }
 
 .aboutSubtitle {
@@ -425,14 +426,13 @@ color: rgba(255, 177, 71, 1);
   display: block;
   position: relative;
   align-self: auto;
-  max-width: 30%;
+  max-width: 33%;
   overflow: hidden;
-  margin: 1%;
-  border-radius: 30px;
+  margin: 2px;
 }
 
 .workImageHolder {
-  margin-bottom: -4px;
+  margin-bottom: -5px;
 }
 
 .workImage {
@@ -470,21 +470,46 @@ color: rgba(255, 177, 71, 1);
   padding: 2px 8px;
 }
 
-.waveHolder{
-  margin-bottom: -50px;
-  margin-left: -10px;
-}
-
 /* =============== DETAIL =============== */
 
 #detailledGrid{
   display: none;
 }
-#brickIcon:hover {
-  fill: red; /* Change the color to your desired color */
+
+.detailItem {
+  display: flex;
+  margin-top: 64px;
+}
+
+.detailLeftColumn {
+  width: 40%;
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+.detailRightColumn {
+  width: 50%;
+}
+
+.detailImage {
+  max-height: 957px;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  border-radius: 30px;
+}
+
+.detailDesc{
+  margin-bottom: 24px;
 }
 
 /* =============== Footer =============== */
+
+.waveHolder{
+  margin-bottom: -50px;
+  margin-left: -10px;
+}
+
 footer {
   position: relative;
   display: flex;
@@ -526,6 +551,10 @@ footer {
   color: #f5f5f5;
   margin-right: 24px;
   font-weight: 600;
+}
+
+.footerSocialLink:hover{
+color: rgba(255, 177, 71, 1);
 }
 
 .footerCopyright {
