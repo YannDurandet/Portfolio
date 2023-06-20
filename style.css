@@ -141,8 +141,7 @@ html {
 
 #landingPage {
   background-color: #f0f0f0;
-  padding-top: 100px;
-  padding-bottom: 10px;
+height: 100dvh;
 }
 
 header {
@@ -154,9 +153,8 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin: 0 auto;
+  margin: 100px auto 0 auto;
   width: 1200px;
-  row-gap: 100px;
 }
 
 .description {
@@ -174,15 +172,25 @@ header {
 .kenobi {
   font-weight: 400;
   font-style: italic;
-  font-size: 40px;
+  font-size: 24px;
   color: #242424;
 }
 
 .colortest {
+  color: transparent;
   background: linear-gradient(90deg, rgba(255, 177, 71, 1) 0%, rgba(255, 108, 99, 1) 50%, rgba(184, 106, 223, 1) 100%);
   background-clip: text;
-  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+
+@supports not (-webkit-text-fill-color: transparent) {
+.colortest {
+    background: none;
+    color: rgba(255, 177, 71, 1);
+  }
+}
+
 
 .heroDesc {
   font-size: 32px;
@@ -237,9 +245,6 @@ header {
 }
 
 .aboutName {
-  background: linear-gradient(90deg, rgba(255, 177, 71, 1) 0%, rgba(255, 108, 99, 1) 50%, rgba(184, 106, 223, 1) 100%);
-  background-clip: text;
-  color: transparent;
   font-size: 48px;
   margin-bottom: 16px;
   width: fit-content;
@@ -338,9 +343,6 @@ color: rgba(255, 177, 71, 1);
 }
 
 .infoH2 {
-  background: linear-gradient(90deg, rgba(255, 177, 71, 1) 0%, rgba(255, 108, 99, 1) 50%, rgba(184, 106, 223, 1) 100%);
-  background-clip: text;
-  color: transparent;
   font-size: 48px;
   margin-right: 8px;
 }
@@ -478,17 +480,19 @@ color: rgba(255, 177, 71, 1);
 
 .detailItem {
   display: flex;
-  margin-top: 64px;
+  margin-top: 32px;
 }
 
 .detailLeftColumn {
   width: 40%;
   margin-left: 32px;
-  margin-right: 32px;
 }
 
 .detailRightColumn {
   width: 50%;
+  background-color: white;
+  padding-left: 32px;
+  margin-bottom: 5px;
 }
 
 .detailImage {
@@ -496,11 +500,11 @@ color: rgba(255, 177, 71, 1);
   max-width: 100%;
   height: auto;
   width: auto;
-  border-radius: 30px;
 }
 
 .detailDesc{
   margin-bottom: 24px;
+  margin-right: 32px;
 }
 
 /* =============== Footer =============== */
