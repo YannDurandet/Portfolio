@@ -123,13 +123,10 @@ html {
   border-radius: 32px;
   margin-bottom: 12px;
 }
-
-.navSocialIcon:hover {
-  background: linear-gradient(90deg, rgba(255, 177, 71, 1) 0%, rgba(255, 108, 99, 1) 50%, rgba(184, 106, 223, 1) 100%);
-  background-clip: text;
-  color: transparent;
+.navSocialIcon:hover{
+  background-color: #252525;
+  color: #f0f0f0;
 }
-
 .navbarFooter {
   margin-top: 20px;
   font-size: 16px;
@@ -141,7 +138,7 @@ html {
 
 #landingPage {
   background-color: #f0f0f0;
-height: 100dvh;
+  height: 100dvh;
 }
 
 header {
@@ -185,7 +182,7 @@ header {
 }
 
 @supports not (-webkit-text-fill-color: transparent) {
-.colortest {
+  .colortest {
     background: none;
     color: rgba(255, 177, 71, 1);
   }
@@ -284,7 +281,7 @@ header {
 }
 
 .resumeBox:hover .resumeLink {
-color: rgba(255, 177, 71, 1);
+  color: rgba(255, 177, 71, 1);
 }
 
 .aboutImg {
@@ -329,6 +326,8 @@ color: rgba(255, 177, 71, 1);
   display: flex;
   justify-content: flex-start;
   margin-top: 12px;
+  padding-bottom: 24px;
+  border-bottom: 2px solid rgb(216, 216, 216);
 }
 
 .infoBox:first-child {
@@ -351,7 +350,7 @@ color: rgba(255, 177, 71, 1);
   background-color: black;
   font-size: 20px;
   padding: 40px;
-  margin-top: 40px;
+  margin-top: 24px;
 }
 
 .quoteText {
@@ -375,7 +374,7 @@ color: rgba(255, 177, 71, 1);
   background-color: #f0f0f0;
 }
 
-.menuTop{
+.menuTop {
   width: 100px;
   display: flex;
   justify-content: space-around;
@@ -384,11 +383,10 @@ color: rgba(255, 177, 71, 1);
   flex-direction: row;
 }
 
-.menuButtonTop:hover{
-  background: linear-gradient(90deg, rgba(255, 177, 71, 1) 0%, rgba(255, 108, 99, 1) 50%, rgba(184, 106, 223, 1) 100%);
-  background-clip: text;
-  color: transparent;
+.menuButtonTop:hover {
+  opacity: 0.7;
 }
+
 #menuBottom {
   width: 800px;
   display: flex;
@@ -413,24 +411,22 @@ color: rgba(255, 177, 71, 1);
 
 #workGrid {
   background-color: #f0f0f0;
+  width: 100%;
 }
 
 .container {
-  margin: 0 auto;
-  padding: 40px 0;
+  margin: 40px auto 0 auto;
   max-width: 1200px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-.workItem {
-  display: block;
-  position: relative;
-  align-self: auto;
-  max-width: 33%;
-  overflow: hidden;
-  margin: 2px;
+.gridItem {
+  display: inline-flex;
+  align-items: flex-start;
+  margin-bottom: 60px;
+  margin-right: 100px;
 }
 
 .workImageHolder {
@@ -438,43 +434,30 @@ color: rgba(255, 177, 71, 1);
 }
 
 .workImage {
-  width: 100%;
-  position: center;
+  height: 300px;
 }
 
 .workDescription {
-  position: absolute;
-  top: 5%;
-  left: 20px;
-  transform: translateX(-100%);
-  opacity: 0;
-  transition: opacity 300ms, transform 450ms ease;
-  max-width: fit-content;
-  margin-right: 20px;
+  width: 200px;
 }
 
 .workDescTitle {
   font-size: 40px;
-}
-
-.workDescText {
-  margin-top: 8px;
-  margin-right: 16px;
+  margin-bottom: 24px;
 }
 
 .workDescTag {
-  margin-top: 4px;
-  margin-bottom: 8px;
-  font-size: 12px;
-  border-radius: 12px;
-  font-weight: 600;
+  opacity: 0.7;
+  margin: 16px 0;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: italic;
   width: fit-content;
-  padding: 2px 8px;
 }
 
 /* =============== DETAIL =============== */
 
-#detailledGrid{
+#detailledGrid {
   display: none;
 }
 
@@ -502,14 +485,14 @@ color: rgba(255, 177, 71, 1);
   width: auto;
 }
 
-.detailDesc{
+.detailDesc {
   margin-bottom: 24px;
   margin-right: 32px;
 }
 
 /* =============== Footer =============== */
 
-.waveHolder{
+.waveHolder {
   margin-bottom: -50px;
   margin-left: -10px;
 }
@@ -557,12 +540,13 @@ footer {
   font-weight: 600;
 }
 
-.footerSocialLink:hover{
-color: rgba(255, 177, 71, 1);
+.footerSocialLink:hover {
+  color: rgba(255, 177, 71, 1);
 }
 
 .footerCopyright {
   color: rgb(140, 140, 140);
+  padding-bottom: 20px;
 }
 
 /* =============== Link Hover Effect =============== */
@@ -649,19 +633,40 @@ color: rgba(255, 177, 71, 1);
 
 /* === Responsive === */
 
-@media (min-width: 769px) {
 
-  .workItem:hover .workDescription {
-    opacity: 1;
-    transform: translateY(0%);
-  }
+/* === SecondPage === */
+.workInProgress {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ffffff;
+  max-width: 800px;
+  margin: 0 auto;
+}
 
-  .workItem:hover .workImage {
-    filter: brightness(0.2);
-  }
+.wipTitle {
+  padding-top: 16px;
+  text-align: center;
+  opacity: 0.7;
+  font-size: 96px;
+}
 
-  .footerAnchor:hover .footerLogoPopper {
-    transform: translateX(20px);
-    opacity: 1;
-  }
+.wipSubtitle {
+  text-align: center;
+  font-size: 32px;
+}
+
+.wipText {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+  padding: 0 20px 10px 20px;
+}
+
+#sauce {
+  max-height: 370px;
+  margin-top: 10px;
+  align-self: flex-start;
 }
